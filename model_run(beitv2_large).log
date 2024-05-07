@@ -1,0 +1,308 @@
+# model_name : beitv2_large_patch16_224
+
+05/04 17:19:45 [INFO] program started
+05/04 17:19:45 [INFO] {'SEED': 42, 'N_SPLIT': 5, 'LABEL_SMOOTHING': 0.05, 'OPTIMIZER': 'AdamW', 'INTERPOLATION': 'robidouxsharp', 'PRECISION': '16', 'MODEL_NAME': 'timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k', 'IMG_SIZE': 224, 'BATCH_SIZE': 48, 'LR': [1.7320508075688774e-05, 1e-06], 'IMG_TRAIN_SIZE': 224}
+05/04 17:19:45 [INFO] cuda
+05/04 17:19:45 [INFO] seed_everything : 42
+05/04 17:19:46 [INFO] fold_idx=0 started
+05/04 17:19:46 [ERRO] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+05/04 17:19:54 [INFO] load_img_size=224
+05/04 17:19:55 [INFO] load_img_size=224
+05/04 17:19:55 [INFO] create_model: timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k
+05/04 17:19:55 [INFO] Loading pretrained weights from Hugging Face hub (timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k)
+05/04 17:19:55 [INFO] [timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 17:19:56 [INFO] use_amp=True
+05/04 17:21:21 [INFO] eps=1, lr=3.22e-05, t_loss=1.6560, v_loss=0.7284*, v_f1=0.9466*
+05/04 17:22:46 [INFO] eps=1, lr=3e-05, t_loss=1.1762, v_loss=0.4908*, v_f1=0.9608*
+05/04 17:24:13 [INFO] eps=1, lr=2.79e-05, t_loss=0.9956, v_loss=0.4732*, v_f1=0.9648*
+05/04 17:25:40 [INFO] eps=1, lr=2.59e-05, t_loss=0.9032, v_loss=0.4606*, v_f1=0.9685*
+05/04 17:27:07 [INFO] eps=2, lr=2.41e-05, t_loss=0.5503, v_loss=0.4548*, v_f1=0.9714*
+05/04 17:28:34 [INFO] eps=2, lr=2.24e-05, t_loss=0.5515, v_loss=0.4504*, v_f1=0.9708 
+05/04 17:30:00 [INFO] eps=2, lr=2.08e-05, t_loss=0.5470, v_loss=0.4459*, v_f1=0.9697 
+05/04 17:31:27 [INFO] eps=2, lr=1.94e-05, t_loss=0.5409, v_loss=0.4438*, v_f1=0.9697 
+05/04 17:32:53 [INFO] eps=3, lr=1.8e-05, t_loss=0.5063, v_loss=0.4405*, v_f1=0.9716*
+05/04 17:34:20 [INFO] eps=3, lr=1.68e-05, t_loss=0.5028, v_loss=0.4391*, v_f1=0.9724*
+05/04 17:35:46 [INFO] eps=3, lr=1.56e-05, t_loss=0.5025, v_loss=0.4326*, v_f1=0.9724*
+05/04 17:37:12 [INFO] eps=3, lr=1.45e-05, t_loss=0.4965, v_loss=0.4320*, v_f1=0.9766*
+05/04 17:37:13 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=03-val_loss=0.4320-val_score=0.9766.ckpt : saved.
+05/04 17:38:39 [INFO] eps=4, lr=1.35e-05, t_loss=0.4728, v_loss=0.4246*, v_f1=0.9768*
+05/04 17:38:40 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=04-val_loss=0.4246-val_score=0.9768.ckpt : saved.
+05/04 17:40:06 [INFO] eps=4, lr=1.25e-05, t_loss=0.4698, v_loss=0.4306 , v_f1=0.9735 
+05/04 17:41:32 [INFO] eps=4, lr=1.17e-05, t_loss=0.4691, v_loss=0.4201*, v_f1=0.9788*
+05/04 17:41:33 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=04-val_loss=0.4201-val_score=0.9788.ckpt : saved.
+05/04 17:42:59 [INFO] eps=4, lr=1.08e-05, t_loss=0.4679, v_loss=0.4244 , v_f1=0.9785 
+05/04 17:44:25 [INFO] eps=5, lr=1.01e-05, t_loss=0.4505, v_loss=0.4217 , v_f1=0.9766 
+05/04 17:45:51 [INFO] eps=5, lr=9.38e-06, t_loss=0.4489, v_loss=0.4204 , v_f1=0.9784 
+05/04 17:47:16 [INFO] eps=5, lr=8.73e-06, t_loss=0.4479, v_loss=0.4189*, v_f1=0.9769 
+05/04 17:48:42 [INFO] eps=5, lr=8.11e-06, t_loss=0.4512, v_loss=0.4231 , v_f1=0.9758 
+05/04 17:50:08 [INFO] eps=6, lr=7.55e-06, t_loss=0.4520, v_loss=0.4181*, v_f1=0.9780 
+05/04 17:51:34 [INFO] eps=6, lr=7.02e-06, t_loss=0.4491, v_loss=0.4206 , v_f1=0.9762 
+05/04 17:52:59 [INFO] eps=6, lr=6.53e-06, t_loss=0.4449, v_loss=0.4151*, v_f1=0.9790*
+05/04 17:53:01 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=06-val_loss=0.4151-val_score=0.9790.ckpt : saved.
+05/04 17:54:26 [INFO] eps=6, lr=6.07e-06, t_loss=0.4418, v_loss=0.4192 , v_f1=0.9785 
+05/04 17:55:53 [INFO] eps=7, lr=5.65e-06, t_loss=0.4337, v_loss=0.4175 , v_f1=0.9773 
+05/04 17:57:19 [INFO] eps=7, lr=5.25e-06, t_loss=0.4345, v_loss=0.4161 , v_f1=0.9779 
+05/04 17:58:45 [INFO] eps=7, lr=4.88e-06, t_loss=0.4383, v_loss=0.4137*, v_f1=0.9784 
+05/04 18:00:10 [INFO] eps=7, lr=4.54e-06, t_loss=0.4341, v_loss=0.4209 , v_f1=0.9771 
+05/04 18:01:36 [INFO] eps=8, lr=4.22e-06, t_loss=0.4249, v_loss=0.4163 , v_f1=0.9780 
+05/04 18:03:02 [INFO] eps=8, lr=3.93e-06, t_loss=0.4262, v_loss=0.4138 , v_f1=0.9814*
+05/04 18:03:03 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=08-val_loss=0.4138-val_score=0.9814.ckpt : saved.
+05/04 18:04:29 [INFO] eps=8, lr=3.65e-06, t_loss=0.4277, v_loss=0.4135*, v_f1=0.9786 
+05/04 18:05:55 [INFO] eps=8, lr=3.4e-06, t_loss=0.4287, v_loss=0.4114*, v_f1=0.9793 
+05/04 18:07:20 [INFO] eps=9, lr=3.16e-06, t_loss=0.4259, v_loss=0.4112*, v_f1=0.9818*
+05/04 18:07:21 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=09-val_loss=0.4112-val_score=0.9818.ckpt : saved.
+05/04 18:08:47 [INFO] eps=9, lr=2.94e-06, t_loss=0.4192, v_loss=0.4122 , v_f1=0.9808 
+05/04 18:10:13 [INFO] eps=9, lr=2.73e-06, t_loss=0.4205, v_loss=0.4121 , v_f1=0.9796 
+05/04 18:11:38 [INFO] eps=9, lr=2.54e-06, t_loss=0.4231, v_loss=0.4105*, v_f1=0.9814 
+05/04 18:13:04 [INFO] eps=10, lr=2.36e-06, t_loss=0.4226, v_loss=0.4110 , v_f1=0.9789 
+05/04 18:14:30 [INFO] eps=10, lr=2.2e-06, t_loss=0.4179, v_loss=0.4126 , v_f1=0.9804 
+05/04 18:15:56 [INFO] eps=10, lr=2.04e-06, t_loss=0.4208, v_loss=0.4110 , v_f1=0.9808 
+05/04 18:17:22 [INFO] eps=10, lr=1.9e-06, t_loss=0.4205, v_loss=0.4114 , v_f1=0.9799 
+05/04 18:18:49 [INFO] eps=11, lr=1.77e-06, t_loss=0.4247, v_loss=0.4119 , v_f1=0.9798 
+05/04 18:20:15 [INFO] eps=11, lr=1.64e-06, t_loss=0.4254, v_loss=0.4120 , v_f1=0.9805 
+05/04 18:20:15 [INFO] NO_MORE_TRAINING, best_score=0.9818
+05/04 18:20:35 [INFO] EMA ::: ema_v_loss=0.4100, ema_v_f1=0.9811
+05/04 18:20:36 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=11-val_loss=0.4100-val_score=0.9811-ema.ckpt : (ema) saved.
+05/04 18:20:36 [INFO] fold_idx=0 finished
+05/04 18:20:42 [INFO] fold_idx=1 started
+05/04 18:20:50 [INFO] load_img_size=224
+05/04 18:20:50 [INFO] load_img_size=224
+05/04 18:20:50 [INFO] create_model: timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k
+05/04 18:20:50 [INFO] Loading pretrained weights from Hugging Face hub (timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k)
+05/04 18:20:50 [INFO] [timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 18:20:50 [INFO] use_amp=True
+05/04 18:22:16 [INFO] eps=1, lr=3.22e-05, t_loss=1.4907, v_loss=0.6863*, v_f1=0.9431*
+05/04 18:23:43 [INFO] eps=1, lr=3e-05, t_loss=1.0980, v_loss=0.5089*, v_f1=0.9596*
+05/04 18:25:10 [INFO] eps=1, lr=2.79e-05, t_loss=0.9378, v_loss=0.4809*, v_f1=0.9632*
+05/04 18:26:37 [INFO] eps=1, lr=2.59e-05, t_loss=0.8516, v_loss=0.4686*, v_f1=0.9663*
+05/04 18:28:04 [INFO] eps=2, lr=2.41e-05, t_loss=0.5586, v_loss=0.4566*, v_f1=0.9683*
+05/04 18:29:31 [INFO] eps=2, lr=2.24e-05, t_loss=0.5459, v_loss=0.4504*, v_f1=0.9715*
+05/04 18:30:58 [INFO] eps=2, lr=2.08e-05, t_loss=0.5456, v_loss=0.4502*, v_f1=0.9683 
+05/04 18:32:24 [INFO] eps=2, lr=1.94e-05, t_loss=0.5391, v_loss=0.4437*, v_f1=0.9703 
+05/04 18:33:51 [INFO] eps=3, lr=1.8e-05, t_loss=0.4945, v_loss=0.4362*, v_f1=0.9714 
+05/04 18:35:18 [INFO] eps=3, lr=1.68e-05, t_loss=0.4883, v_loss=0.4338*, v_f1=0.9698 
+05/04 18:36:44 [INFO] eps=3, lr=1.56e-05, t_loss=0.4924, v_loss=0.4259*, v_f1=0.9755*
+05/04 18:36:45 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=03-val_loss=0.4259-val_score=0.9755.ckpt : saved.
+05/04 18:38:12 [INFO] eps=3, lr=1.45e-05, t_loss=0.4906, v_loss=0.4289 , v_f1=0.9746 
+05/04 18:39:38 [INFO] eps=4, lr=1.35e-05, t_loss=0.4760, v_loss=0.4287 , v_f1=0.9775*
+05/04 18:39:39 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=04-val_loss=0.4287-val_score=0.9775.ckpt : saved.
+05/04 18:41:06 [INFO] eps=4, lr=1.25e-05, t_loss=0.4726, v_loss=0.4238*, v_f1=0.9760 
+05/04 18:42:32 [INFO] eps=4, lr=1.17e-05, t_loss=0.4647, v_loss=0.4189*, v_f1=0.9784*
+05/04 18:42:33 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=04-val_loss=0.4189-val_score=0.9784.ckpt : saved.
+05/04 18:44:00 [INFO] eps=4, lr=1.08e-05, t_loss=0.4674, v_loss=0.4205 , v_f1=0.9778 
+05/04 18:45:27 [INFO] eps=5, lr=1.01e-05, t_loss=0.4500, v_loss=0.4188*, v_f1=0.9773 
+05/04 18:46:53 [INFO] eps=5, lr=9.38e-06, t_loss=0.4570, v_loss=0.4212 , v_f1=0.9776 
+05/04 18:48:20 [INFO] eps=5, lr=8.73e-06, t_loss=0.4546, v_loss=0.4159*, v_f1=0.9792*
+05/04 18:48:21 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=05-val_loss=0.4159-val_score=0.9792.ckpt : saved.
+05/04 18:49:47 [INFO] eps=5, lr=8.11e-06, t_loss=0.4531, v_loss=0.4163 , v_f1=0.9773 
+05/04 18:51:13 [INFO] eps=6, lr=7.55e-06, t_loss=0.4391, v_loss=0.4173 , v_f1=0.9776 
+05/04 18:52:39 [INFO] eps=6, lr=7.02e-06, t_loss=0.4434, v_loss=0.4143*, v_f1=0.9775 
+05/04 18:54:05 [INFO] eps=6, lr=6.53e-06, t_loss=0.4448, v_loss=0.4130*, v_f1=0.9778 
+05/04 18:55:31 [INFO] eps=6, lr=6.07e-06, t_loss=0.4436, v_loss=0.4112*, v_f1=0.9786 
+05/04 18:56:58 [INFO] eps=7, lr=5.65e-06, t_loss=0.4151, v_loss=0.4184 , v_f1=0.9778 
+05/04 18:58:24 [INFO] eps=7, lr=5.25e-06, t_loss=0.4251, v_loss=0.4120 , v_f1=0.9789 
+05/04 18:59:51 [INFO] eps=7, lr=4.88e-06, t_loss=0.4257, v_loss=0.4129 , v_f1=0.9784 
+05/04 19:01:17 [INFO] eps=7, lr=4.54e-06, t_loss=0.4263, v_loss=0.4112*, v_f1=0.9793*
+05/04 19:01:18 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=07-val_loss=0.4112-val_score=0.9793.ckpt : saved.
+05/04 19:02:45 [INFO] eps=8, lr=4.22e-06, t_loss=0.4335, v_loss=0.4103*, v_f1=0.9777 
+05/04 19:04:12 [INFO] eps=8, lr=3.93e-06, t_loss=0.4271, v_loss=0.4071*, v_f1=0.9797*
+05/04 19:04:13 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=08-val_loss=0.4071-val_score=0.9797.ckpt : saved.
+05/04 19:05:39 [INFO] eps=8, lr=3.65e-06, t_loss=0.4269, v_loss=0.4104 , v_f1=0.9789 
+05/04 19:07:05 [INFO] eps=8, lr=3.4e-06, t_loss=0.4240, v_loss=0.4135 , v_f1=0.9774 
+05/04 19:08:31 [INFO] eps=9, lr=3.16e-06, t_loss=0.4421, v_loss=0.4093 , v_f1=0.9802*
+05/04 19:08:32 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=09-val_loss=0.4093-val_score=0.9802.ckpt : saved.
+05/04 19:09:58 [INFO] eps=9, lr=2.94e-06, t_loss=0.4300, v_loss=0.4066*, v_f1=0.9802 
+05/04 19:11:24 [INFO] eps=9, lr=2.73e-06, t_loss=0.4288, v_loss=0.4067 , v_f1=0.9796 
+05/04 19:12:50 [INFO] eps=9, lr=2.54e-06, t_loss=0.4236, v_loss=0.4094 , v_f1=0.9798 
+05/04 19:14:16 [INFO] eps=10, lr=2.36e-06, t_loss=0.4281, v_loss=0.4101 , v_f1=0.9806*
+05/04 19:14:18 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=10-val_loss=0.4101-val_score=0.9806.ckpt : saved.
+05/04 19:15:44 [INFO] eps=10, lr=2.2e-06, t_loss=0.4224, v_loss=0.4086 , v_f1=0.9800 
+05/04 19:17:11 [INFO] eps=10, lr=2.04e-06, t_loss=0.4186, v_loss=0.4071 , v_f1=0.9815*
+05/04 19:17:12 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=10-val_loss=0.4071-val_score=0.9815.ckpt : saved.
+05/04 19:18:38 [INFO] eps=10, lr=1.9e-06, t_loss=0.4156, v_loss=0.4066*, v_f1=0.9810 
+05/04 19:20:04 [INFO] eps=11, lr=1.77e-06, t_loss=0.4087, v_loss=0.4063*, v_f1=0.9793 
+05/04 19:21:30 [INFO] eps=11, lr=1.64e-06, t_loss=0.4078, v_loss=0.4058*, v_f1=0.9807 
+05/04 19:22:56 [INFO] eps=11, lr=1.53e-06, t_loss=0.4109, v_loss=0.4073 , v_f1=0.9804 
+05/04 19:24:22 [INFO] eps=11, lr=1.42e-06, t_loss=0.4127, v_loss=0.4077 , v_f1=0.9805 
+05/04 19:25:48 [INFO] eps=12, lr=1.32e-06, t_loss=0.4071, v_loss=0.4086 , v_f1=0.9792 
+05/04 19:27:15 [INFO] eps=12, lr=1.23e-06, t_loss=0.4148, v_loss=0.4093 , v_f1=0.9785 
+05/04 19:28:41 [INFO] eps=12, lr=1.14e-06, t_loss=0.4110, v_loss=0.4079 , v_f1=0.9794 
+05/04 19:30:07 [INFO] eps=12, lr=1.06e-06, t_loss=0.4139, v_loss=0.4071 , v_f1=0.9788 
+05/04 19:30:07 [INFO] NO_MORE_TRAINING, best_score=0.9815
+05/04 19:30:27 [INFO] EMA ::: ema_v_loss=0.4061, ema_v_f1=0.9801
+05/04 19:30:28 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=12-val_loss=0.4061-val_score=0.9801-ema.ckpt : (ema) saved.
+05/04 19:30:29 [INFO] fold_idx=1 finished
+05/04 19:30:36 [INFO] fold_idx=2 started
+05/04 19:30:43 [INFO] load_img_size=224
+05/04 19:30:43 [INFO] load_img_size=224
+05/04 19:30:43 [INFO] create_model: timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k
+05/04 19:30:44 [INFO] Loading pretrained weights from Hugging Face hub (timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k)
+05/04 19:30:44 [INFO] [timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 19:30:44 [INFO] use_amp=True
+05/04 19:32:10 [INFO] eps=1, lr=3.22e-05, t_loss=1.4671, v_loss=0.6653*, v_f1=0.9470*
+05/04 19:33:37 [INFO] eps=1, lr=3e-05, t_loss=1.0657, v_loss=0.4913*, v_f1=0.9608*
+05/04 19:35:04 [INFO] eps=1, lr=2.79e-05, t_loss=0.9219, v_loss=0.4803*, v_f1=0.9585 
+05/04 19:36:31 [INFO] eps=1, lr=2.59e-05, t_loss=0.8457, v_loss=0.4597*, v_f1=0.9682*
+05/04 19:37:57 [INFO] eps=2, lr=2.41e-05, t_loss=0.5640, v_loss=0.4604 , v_f1=0.9696*
+05/04 19:39:23 [INFO] eps=2, lr=2.24e-05, t_loss=0.5561, v_loss=0.4504*, v_f1=0.9691 
+05/04 19:40:49 [INFO] eps=2, lr=2.08e-05, t_loss=0.5524, v_loss=0.4502*, v_f1=0.9684 
+05/04 19:42:16 [INFO] eps=2, lr=1.94e-05, t_loss=0.5466, v_loss=0.4422*, v_f1=0.9724*
+05/04 19:43:42 [INFO] eps=3, lr=1.8e-05, t_loss=0.5056, v_loss=0.4403*, v_f1=0.9720 
+05/04 19:45:09 [INFO] eps=3, lr=1.68e-05, t_loss=0.5057, v_loss=0.4381*, v_f1=0.9702 
+05/04 19:46:36 [INFO] eps=3, lr=1.56e-05, t_loss=0.5045, v_loss=0.4370*, v_f1=0.9708 
+05/04 19:48:02 [INFO] eps=3, lr=1.45e-05, t_loss=0.4967, v_loss=0.4359*, v_f1=0.9741*
+05/04 19:49:29 [INFO] eps=4, lr=1.35e-05, t_loss=0.4793, v_loss=0.4268*, v_f1=0.9755*
+05/04 19:49:30 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=04-val_loss=0.4268-val_score=0.9755.ckpt : saved.
+05/04 19:50:56 [INFO] eps=4, lr=1.25e-05, t_loss=0.4764, v_loss=0.4283 , v_f1=0.9775*
+05/04 19:50:57 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=04-val_loss=0.4283-val_score=0.9775.ckpt : saved.
+05/04 19:52:23 [INFO] eps=4, lr=1.17e-05, t_loss=0.4767, v_loss=0.4276 , v_f1=0.9750 
+05/04 19:53:49 [INFO] eps=4, lr=1.08e-05, t_loss=0.4723, v_loss=0.4250*, v_f1=0.9756 
+05/04 19:55:16 [INFO] eps=5, lr=1.01e-05, t_loss=0.4610, v_loss=0.4255 , v_f1=0.9748 
+05/04 19:56:42 [INFO] eps=5, lr=9.38e-06, t_loss=0.4541, v_loss=0.4260 , v_f1=0.9736 
+05/04 19:58:09 [INFO] eps=5, lr=8.73e-06, t_loss=0.4509, v_loss=0.4268 , v_f1=0.9750 
+05/04 19:59:35 [INFO] eps=5, lr=8.11e-06, t_loss=0.4527, v_loss=0.4245*, v_f1=0.9763 
+05/04 20:01:02 [INFO] eps=6, lr=7.55e-06, t_loss=0.4573, v_loss=0.4268 , v_f1=0.9754 
+05/04 20:02:29 [INFO] eps=6, lr=7.02e-06, t_loss=0.4485, v_loss=0.4195*, v_f1=0.9784*
+05/04 20:02:30 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=06-val_loss=0.4195-val_score=0.9784.ckpt : saved.
+05/04 20:03:56 [INFO] eps=6, lr=6.53e-06, t_loss=0.4482, v_loss=0.4219 , v_f1=0.9777 
+05/04 20:05:22 [INFO] eps=6, lr=6.07e-06, t_loss=0.4488, v_loss=0.4185*, v_f1=0.9758 
+05/04 20:06:48 [INFO] eps=7, lr=5.65e-06, t_loss=0.4527, v_loss=0.4162*, v_f1=0.9781 
+05/04 20:08:14 [INFO] eps=7, lr=5.25e-06, t_loss=0.4434, v_loss=0.4175 , v_f1=0.9786*
+05/04 20:08:16 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=07-val_loss=0.4175-val_score=0.9786.ckpt : saved.
+05/04 20:09:42 [INFO] eps=7, lr=4.88e-06, t_loss=0.4386, v_loss=0.4161*, v_f1=0.9781 
+05/04 20:11:08 [INFO] eps=7, lr=4.54e-06, t_loss=0.4363, v_loss=0.4157*, v_f1=0.9772 
+05/04 20:12:34 [INFO] eps=8, lr=4.22e-06, t_loss=0.4411, v_loss=0.4119*, v_f1=0.9788*
+05/04 20:12:35 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=08-val_loss=0.4119-val_score=0.9788.ckpt : saved.
+05/04 20:14:01 [INFO] eps=8, lr=3.93e-06, t_loss=0.4307, v_loss=0.4133 , v_f1=0.9785 
+05/04 20:15:27 [INFO] eps=8, lr=3.65e-06, t_loss=0.4353, v_loss=0.4140 , v_f1=0.9784 
+05/04 20:16:53 [INFO] eps=8, lr=3.4e-06, t_loss=0.4330, v_loss=0.4140 , v_f1=0.9788*
+05/04 20:16:54 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=08-val_loss=0.4140-val_score=0.9788.ckpt : saved.
+05/04 20:18:20 [INFO] eps=9, lr=3.16e-06, t_loss=0.4285, v_loss=0.4144 , v_f1=0.9775 
+05/04 20:19:46 [INFO] eps=9, lr=2.94e-06, t_loss=0.4198, v_loss=0.4140 , v_f1=0.9791*
+05/04 20:19:48 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=09-val_loss=0.4140-val_score=0.9791.ckpt : saved.
+05/04 20:21:14 [INFO] eps=9, lr=2.73e-06, t_loss=0.4209, v_loss=0.4129 , v_f1=0.9803*
+05/04 20:21:15 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=09-val_loss=0.4129-val_score=0.9803.ckpt : saved.
+05/04 20:22:41 [INFO] eps=9, lr=2.54e-06, t_loss=0.4213, v_loss=0.4126 , v_f1=0.9796 
+05/04 20:24:08 [INFO] eps=10, lr=2.36e-06, t_loss=0.4193, v_loss=0.4129 , v_f1=0.9800 
+05/04 20:25:34 [INFO] eps=10, lr=2.2e-06, t_loss=0.4214, v_loss=0.4124 , v_f1=0.9799 
+05/04 20:27:01 [INFO] eps=10, lr=2.04e-06, t_loss=0.4254, v_loss=0.4122 , v_f1=0.9799 
+05/04 20:28:28 [INFO] eps=10, lr=1.9e-06, t_loss=0.4246, v_loss=0.4121 , v_f1=0.9787 
+05/04 20:29:54 [INFO] eps=11, lr=1.77e-06, t_loss=0.4197, v_loss=0.4129 , v_f1=0.9780 
+05/04 20:29:54 [INFO] NO_MORE_TRAINING, best_score=0.9803
+05/04 20:30:14 [INFO] EMA ::: ema_v_loss=0.4116, ema_v_f1=0.9804
+05/04 20:30:15 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=11-val_loss=0.4116-val_score=0.9804-ema.ckpt : (ema) saved.
+05/04 20:30:16 [INFO] fold_idx=2 finished
+05/04 20:30:23 [INFO] fold_idx=3 started
+05/04 20:30:30 [INFO] load_img_size=224
+05/04 20:30:30 [INFO] load_img_size=224
+05/04 20:30:30 [INFO] create_model: timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k
+05/04 20:30:30 [INFO] Loading pretrained weights from Hugging Face hub (timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k)
+05/04 20:30:31 [INFO] [timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 20:30:31 [INFO] use_amp=True
+05/04 20:31:57 [INFO] eps=1, lr=3.22e-05, t_loss=1.6294, v_loss=0.6966*, v_f1=0.9472*
+05/04 20:33:25 [INFO] eps=1, lr=3e-05, t_loss=1.1732, v_loss=0.4807*, v_f1=0.9621*
+05/04 20:34:52 [INFO] eps=1, lr=2.79e-05, t_loss=1.0044, v_loss=0.4629*, v_f1=0.9719*
+05/04 20:36:20 [INFO] eps=1, lr=2.59e-05, t_loss=0.9030, v_loss=0.4555*, v_f1=0.9694 
+05/04 20:37:47 [INFO] eps=2, lr=2.41e-05, t_loss=0.5638, v_loss=0.4441*, v_f1=0.9700 
+05/04 20:39:15 [INFO] eps=2, lr=2.24e-05, t_loss=0.5608, v_loss=0.4469 , v_f1=0.9699 
+05/04 20:40:42 [INFO] eps=2, lr=2.08e-05, t_loss=0.5530, v_loss=0.4344*, v_f1=0.9732*
+05/04 20:42:10 [INFO] eps=2, lr=1.94e-05, t_loss=0.5447, v_loss=0.4292*, v_f1=0.9749*
+05/04 20:43:37 [INFO] eps=3, lr=1.8e-05, t_loss=0.4871, v_loss=0.4300 , v_f1=0.9733 
+05/04 20:45:04 [INFO] eps=3, lr=1.68e-05, t_loss=0.4891, v_loss=0.4312 , v_f1=0.9747 
+05/04 20:46:31 [INFO] eps=3, lr=1.56e-05, t_loss=0.4968, v_loss=0.4267*, v_f1=0.9746 
+05/04 20:47:58 [INFO] eps=3, lr=1.45e-05, t_loss=0.4985, v_loss=0.4227*, v_f1=0.9771*
+05/04 20:47:59 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=03-val_loss=0.4227-val_score=0.9771.ckpt : saved.
+05/04 20:49:25 [INFO] eps=4, lr=1.35e-05, t_loss=0.4698, v_loss=0.4230 , v_f1=0.9749 
+05/04 20:50:52 [INFO] eps=4, lr=1.25e-05, t_loss=0.4700, v_loss=0.4146*, v_f1=0.9792*
+05/04 20:50:53 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=04-val_loss=0.4146-val_score=0.9792.ckpt : saved.
+05/04 20:52:20 [INFO] eps=4, lr=1.17e-05, t_loss=0.4677, v_loss=0.4173 , v_f1=0.9793*
+05/04 20:52:21 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=04-val_loss=0.4173-val_score=0.9793.ckpt : saved.
+05/04 20:53:47 [INFO] eps=4, lr=1.08e-05, t_loss=0.4657, v_loss=0.4176 , v_f1=0.9768 
+05/04 20:55:14 [INFO] eps=5, lr=1.01e-05, t_loss=0.4423, v_loss=0.4188 , v_f1=0.9774 
+05/04 20:56:41 [INFO] eps=5, lr=9.38e-06, t_loss=0.4479, v_loss=0.4148 , v_f1=0.9771 
+05/04 20:58:08 [INFO] eps=5, lr=8.73e-06, t_loss=0.4549, v_loss=0.4114*, v_f1=0.9796*
+05/04 20:58:09 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=05-val_loss=0.4114-val_score=0.9796.ckpt : saved.
+05/04 20:59:35 [INFO] eps=5, lr=8.11e-06, t_loss=0.4518, v_loss=0.4177 , v_f1=0.9774 
+05/04 21:01:02 [INFO] eps=6, lr=7.55e-06, t_loss=0.4396, v_loss=0.4129 , v_f1=0.9784 
+05/04 21:02:29 [INFO] eps=6, lr=7.02e-06, t_loss=0.4371, v_loss=0.4137 , v_f1=0.9793 
+05/04 21:03:56 [INFO] eps=6, lr=6.53e-06, t_loss=0.4391, v_loss=0.4122 , v_f1=0.9799*
+05/04 21:03:57 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=06-val_loss=0.4122-val_score=0.9799.ckpt : saved.
+05/04 21:05:24 [INFO] eps=6, lr=6.07e-06, t_loss=0.4423, v_loss=0.4121 , v_f1=0.9782 
+05/04 21:06:51 [INFO] eps=7, lr=5.65e-06, t_loss=0.4198, v_loss=0.4062*, v_f1=0.9792 
+05/04 21:08:18 [INFO] eps=7, lr=5.25e-06, t_loss=0.4248, v_loss=0.4089 , v_f1=0.9796 
+05/04 21:09:44 [INFO] eps=7, lr=4.88e-06, t_loss=0.4250, v_loss=0.4074 , v_f1=0.9787 
+05/04 21:11:11 [INFO] eps=7, lr=4.54e-06, t_loss=0.4273, v_loss=0.4109 , v_f1=0.9789 
+05/04 21:12:37 [INFO] eps=8, lr=4.22e-06, t_loss=0.4151, v_loss=0.4059*, v_f1=0.9795 
+05/04 21:14:04 [INFO] eps=8, lr=3.93e-06, t_loss=0.4185, v_loss=0.4054*, v_f1=0.9809*
+05/04 21:14:05 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=08-val_loss=0.4054-val_score=0.9809.ckpt : saved.
+05/04 21:15:31 [INFO] eps=8, lr=3.65e-06, t_loss=0.4158, v_loss=0.4057 , v_f1=0.9808 
+05/04 21:16:58 [INFO] eps=8, lr=3.4e-06, t_loss=0.4158, v_loss=0.4056 , v_f1=0.9805 
+05/04 21:18:24 [INFO] eps=9, lr=3.16e-06, t_loss=0.4285, v_loss=0.4066 , v_f1=0.9815*
+05/04 21:18:25 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=09-val_loss=0.4066-val_score=0.9815.ckpt : saved.
+05/04 21:19:52 [INFO] eps=9, lr=2.94e-06, t_loss=0.4214, v_loss=0.4029*, v_f1=0.9818*
+05/04 21:19:53 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=09-val_loss=0.4029-val_score=0.9818.ckpt : saved.
+05/04 21:21:20 [INFO] eps=9, lr=2.73e-06, t_loss=0.4197, v_loss=0.4068 , v_f1=0.9803 
+05/04 21:22:46 [INFO] eps=9, lr=2.54e-06, t_loss=0.4172, v_loss=0.4074 , v_f1=0.9803 
+05/04 21:24:13 [INFO] eps=10, lr=2.36e-06, t_loss=0.4155, v_loss=0.4065 , v_f1=0.9809 
+05/04 21:25:39 [INFO] eps=10, lr=2.2e-06, t_loss=0.4176, v_loss=0.4052 , v_f1=0.9821*
+05/04 21:25:40 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=10-val_loss=0.4052-val_score=0.9821.ckpt : saved.
+05/04 21:27:07 [INFO] eps=10, lr=2.04e-06, t_loss=0.4173, v_loss=0.4045 , v_f1=0.9810 
+05/04 21:28:33 [INFO] eps=10, lr=1.9e-06, t_loss=0.4170, v_loss=0.4049 , v_f1=0.9825*
+05/04 21:28:34 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=10-val_loss=0.4049-val_score=0.9825.ckpt : saved.
+05/04 21:30:01 [INFO] eps=11, lr=1.77e-06, t_loss=0.4001, v_loss=0.4050 , v_f1=0.9819 
+05/04 21:31:28 [INFO] eps=11, lr=1.64e-06, t_loss=0.4069, v_loss=0.4072 , v_f1=0.9797 
+05/04 21:32:54 [INFO] eps=11, lr=1.53e-06, t_loss=0.4068, v_loss=0.4066 , v_f1=0.9812 
+05/04 21:34:22 [INFO] eps=11, lr=1.42e-06, t_loss=0.4045, v_loss=0.4074 , v_f1=0.9802 
+05/04 21:35:48 [INFO] eps=12, lr=1.32e-06, t_loss=0.4121, v_loss=0.4063 , v_f1=0.9796 
+05/04 21:37:15 [INFO] eps=12, lr=1.23e-06, t_loss=0.4132, v_loss=0.4064 , v_f1=0.9812 
+05/04 21:37:15 [INFO] NO_MORE_TRAINING, best_score=0.9825
+05/04 21:37:35 [INFO] EMA ::: ema_v_loss=0.4041, ema_v_f1=0.9799
+05/04 21:37:36 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=12-val_loss=0.4041-val_score=0.9799-ema.ckpt : (ema) saved.
+05/04 21:37:37 [INFO] fold_idx=3 finished
+05/04 21:37:42 [INFO] fold_idx=4 started
+05/04 21:37:50 [INFO] load_img_size=224
+05/04 21:37:50 [INFO] load_img_size=224
+05/04 21:37:50 [INFO] create_model: timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k
+05/04 21:37:50 [INFO] Loading pretrained weights from Hugging Face hub (timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k)
+05/04 21:37:50 [INFO] [timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 21:37:50 [INFO] use_amp=True
+05/04 21:39:17 [INFO] eps=1, lr=3.22e-05, t_loss=1.5586, v_loss=0.6951*, v_f1=0.9410*
+05/04 21:40:44 [INFO] eps=1, lr=3e-05, t_loss=1.1440, v_loss=0.4873*, v_f1=0.9634*
+05/04 21:42:12 [INFO] eps=1, lr=2.79e-05, t_loss=0.9732, v_loss=0.4681*, v_f1=0.9655*
+05/04 21:43:40 [INFO] eps=1, lr=2.59e-05, t_loss=0.8795, v_loss=0.4543*, v_f1=0.9686*
+05/04 21:45:07 [INFO] eps=2, lr=2.41e-05, t_loss=0.5503, v_loss=0.4446*, v_f1=0.9717*
+05/04 21:46:35 [INFO] eps=2, lr=2.24e-05, t_loss=0.5451, v_loss=0.4381*, v_f1=0.9727*
+05/04 21:48:02 [INFO] eps=2, lr=2.08e-05, t_loss=0.5480, v_loss=0.4364*, v_f1=0.9754*
+05/04 21:48:03 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=02-val_loss=0.4364-val_score=0.9754.ckpt : saved.
+05/04 21:49:30 [INFO] eps=2, lr=1.94e-05, t_loss=0.5455, v_loss=0.4293*, v_f1=0.9764*
+05/04 21:49:31 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=02-val_loss=0.4293-val_score=0.9764.ckpt : saved.
+05/04 21:50:58 [INFO] eps=3, lr=1.8e-05, t_loss=0.4892, v_loss=0.4260*, v_f1=0.9756 
+05/04 21:52:24 [INFO] eps=3, lr=1.68e-05, t_loss=0.5032, v_loss=0.4247*, v_f1=0.9764*
+05/04 21:52:26 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=03-val_loss=0.4247-val_score=0.9764.ckpt : saved.
+05/04 21:53:52 [INFO] eps=3, lr=1.56e-05, t_loss=0.5008, v_loss=0.4220*, v_f1=0.9778*
+05/04 21:53:53 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=03-val_loss=0.4220-val_score=0.9778.ckpt : saved.
+05/04 21:55:20 [INFO] eps=3, lr=1.45e-05, t_loss=0.4995, v_loss=0.4183*, v_f1=0.9788*
+05/04 21:55:21 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=03-val_loss=0.4183-val_score=0.9788.ckpt : saved.
+05/04 21:56:48 [INFO] eps=4, lr=1.35e-05, t_loss=0.4668, v_loss=0.4179*, v_f1=0.9776 
+05/04 21:58:14 [INFO] eps=4, lr=1.25e-05, t_loss=0.4642, v_loss=0.4157*, v_f1=0.9776 
+05/04 21:59:41 [INFO] eps=4, lr=1.17e-05, t_loss=0.4690, v_loss=0.4149*, v_f1=0.9779 
+05/04 22:01:08 [INFO] eps=4, lr=1.08e-05, t_loss=0.4662, v_loss=0.4140*, v_f1=0.9797*
+05/04 22:01:09 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=04-val_loss=0.4140-val_score=0.9797.ckpt : saved.
+05/04 22:02:35 [INFO] eps=5, lr=1.01e-05, t_loss=0.4585, v_loss=0.4131*, v_f1=0.9785 
+05/04 22:04:01 [INFO] eps=5, lr=9.38e-06, t_loss=0.4591, v_loss=0.4143 , v_f1=0.9784 
+05/04 22:05:28 [INFO] eps=5, lr=8.73e-06, t_loss=0.4595, v_loss=0.4136 , v_f1=0.9781 
+05/04 22:06:54 [INFO] eps=5, lr=8.11e-06, t_loss=0.4560, v_loss=0.4104*, v_f1=0.9804*
+05/04 22:06:55 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=05-val_loss=0.4104-val_score=0.9804.ckpt : saved.
+05/04 22:08:22 [INFO] eps=6, lr=7.55e-06, t_loss=0.4371, v_loss=0.4072*, v_f1=0.9802 
+05/04 22:09:48 [INFO] eps=6, lr=7.02e-06, t_loss=0.4372, v_loss=0.4086 , v_f1=0.9813*
+05/04 22:09:49 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=06-val_loss=0.4086-val_score=0.9813.ckpt : saved.
+05/04 22:11:15 [INFO] eps=6, lr=6.53e-06, t_loss=0.4356, v_loss=0.4096 , v_f1=0.9805 
+05/04 22:12:42 [INFO] eps=6, lr=6.07e-06, t_loss=0.4374, v_loss=0.4136 , v_f1=0.9779 
+05/04 22:14:08 [INFO] eps=7, lr=5.65e-06, t_loss=0.4361, v_loss=0.4135 , v_f1=0.9784 
+05/04 22:15:35 [INFO] eps=7, lr=5.25e-06, t_loss=0.4372, v_loss=0.4099 , v_f1=0.9789 
+05/04 22:17:01 [INFO] eps=7, lr=4.88e-06, t_loss=0.4356, v_loss=0.4108 , v_f1=0.9807 
+05/04 22:18:28 [INFO] eps=7, lr=4.54e-06, t_loss=0.4338, v_loss=0.4090 , v_f1=0.9806 
+05/04 22:18:28 [INFO] NO_MORE_TRAINING, best_score=0.9813
+05/04 22:18:48 [INFO] EMA ::: ema_v_loss=0.4044, ema_v_f1=0.9824
+05/04 22:18:49 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=07-val_loss=0.4044-val_score=0.9824-ema.ckpt : (ema) saved.
+05/04 22:18:49 [INFO] fold_idx=4 finished

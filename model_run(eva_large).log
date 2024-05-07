@@ -1,0 +1,277 @@
+# model_name : eva_large_patch14_196
+# fold_index를 1 -> 2 -> 3 -> 4, 0 번 순으로 진행함
+
+05/04 13:02:53 [INFO] program started
+05/04 13:02:53 [INFO] {'SEED': 42, 'N_SPLIT': 5, 'LABEL_SMOOTHING': 0.05, 'OPTIMIZER': 'AdamW', 'INTERPOLATION': 'robidouxsharp', 'PRECISION': '16', 'MODEL_NAME': 'timm/eva_large_patch14_196.in22k_ft_in22k_in1k', 'IMG_SIZE': 196, 'BATCH_SIZE': 48, 'LR': [1.7320508075688774e-05, 1e-06], 'IMG_TRAIN_SIZE': 196}
+05/04 13:02:53 [INFO] cuda
+05/04 13:02:53 [INFO] seed_everything : 42
+05/04 13:02:54 [INFO] fold_idx=1 started
+05/04 13:02:54 [ERRO] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+05/04 13:03:02 [INFO] load_img_size=196
+05/04 13:03:02 [INFO] load_img_size=196
+05/04 13:03:02 [INFO] create_model: timm/eva_large_patch14_196.in22k_ft_in22k_in1k
+05/04 13:03:03 [INFO] Loading pretrained weights from Hugging Face hub (timm/eva_large_patch14_196.in22k_ft_in22k_in1k)
+05/04 13:03:03 [INFO] [timm/eva_large_patch14_196.in22k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 13:03:03 [INFO] use_amp=True
+05/04 13:04:20 [INFO] eps=1, lr=3.22e-05, t_loss=1.3724, v_loss=0.5755*, v_f1=0.9494*
+05/04 13:05:36 [INFO] eps=1, lr=3e-05, t_loss=1.0205, v_loss=0.4772*, v_f1=0.9626*
+05/04 13:06:53 [INFO] eps=1, lr=2.79e-05, t_loss=0.8806, v_loss=0.4639*, v_f1=0.9681*
+05/04 13:08:11 [INFO] eps=1, lr=2.59e-05, t_loss=0.8044, v_loss=0.4527*, v_f1=0.9686*
+05/04 13:09:28 [INFO] eps=2, lr=2.41e-05, t_loss=0.5395, v_loss=0.4428*, v_f1=0.9718*
+05/04 13:10:45 [INFO] eps=2, lr=2.24e-05, t_loss=0.5339, v_loss=0.4421*, v_f1=0.9719*
+05/04 13:12:02 [INFO] eps=2, lr=2.08e-05, t_loss=0.5289, v_loss=0.4330*, v_f1=0.9726*
+05/04 13:13:18 [INFO] eps=2, lr=1.94e-05, t_loss=0.5278, v_loss=0.4316*, v_f1=0.9727*
+05/04 13:14:35 [INFO] eps=3, lr=1.8e-05, t_loss=0.4829, v_loss=0.4244*, v_f1=0.9743*
+05/04 13:15:53 [INFO] eps=3, lr=1.68e-05, t_loss=0.4809, v_loss=0.4237*, v_f1=0.9743*
+05/04 13:17:09 [INFO] eps=3, lr=1.56e-05, t_loss=0.4808, v_loss=0.4287 , v_f1=0.9747*
+05/04 13:18:26 [INFO] eps=3, lr=1.45e-05, t_loss=0.4808, v_loss=0.4240 , v_f1=0.9758*
+05/04 13:18:27 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=03-val_loss=0.4240-val_score=0.9758.ckpt : saved.
+05/04 13:19:44 [INFO] eps=4, lr=1.35e-05, t_loss=0.4512, v_loss=0.4185*, v_f1=0.9739 
+05/04 13:21:01 [INFO] eps=4, lr=1.25e-05, t_loss=0.4562, v_loss=0.4173*, v_f1=0.9766*
+05/04 13:21:02 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=04-val_loss=0.4173-val_score=0.9766.ckpt : saved.
+05/04 13:22:19 [INFO] eps=4, lr=1.17e-05, t_loss=0.4567, v_loss=0.4149*, v_f1=0.9770*
+05/04 13:22:20 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=04-val_loss=0.4149-val_score=0.9770.ckpt : saved.
+05/04 13:23:36 [INFO] eps=4, lr=1.08e-05, t_loss=0.4565, v_loss=0.4137*, v_f1=0.9773*
+05/04 13:23:38 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=04-val_loss=0.4137-val_score=0.9773.ckpt : saved.
+05/04 13:24:54 [INFO] eps=5, lr=1.01e-05, t_loss=0.4496, v_loss=0.4182 , v_f1=0.9757 
+05/04 13:26:11 [INFO] eps=5, lr=9.38e-06, t_loss=0.4455, v_loss=0.4146 , v_f1=0.9769 
+05/04 13:27:28 [INFO] eps=5, lr=8.73e-06, t_loss=0.4403, v_loss=0.4170 , v_f1=0.9750 
+05/04 13:28:44 [INFO] eps=5, lr=8.11e-06, t_loss=0.4416, v_loss=0.4136*, v_f1=0.9785*
+05/04 13:28:45 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=05-val_loss=0.4136-val_score=0.9785.ckpt : saved.
+05/04 13:30:02 [INFO] eps=6, lr=7.55e-06, t_loss=0.4289, v_loss=0.4145 , v_f1=0.9785 
+05/04 13:31:19 [INFO] eps=6, lr=7.02e-06, t_loss=0.4319, v_loss=0.4116*, v_f1=0.9762 
+05/04 13:32:35 [INFO] eps=6, lr=6.53e-06, t_loss=0.4335, v_loss=0.4100*, v_f1=0.9786*
+05/04 13:32:36 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=06-val_loss=0.4100-val_score=0.9786.ckpt : saved.
+05/04 13:33:53 [INFO] eps=6, lr=6.07e-06, t_loss=0.4359, v_loss=0.4114 , v_f1=0.9799*
+05/04 13:33:54 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=06-val_loss=0.4114-val_score=0.9799.ckpt : saved.
+05/04 13:35:11 [INFO] eps=7, lr=5.65e-06, t_loss=0.4382, v_loss=0.4089*, v_f1=0.9803*
+05/04 13:35:12 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=07-val_loss=0.4089-val_score=0.9803.ckpt : saved.
+05/04 13:36:28 [INFO] eps=7, lr=5.25e-06, t_loss=0.4381, v_loss=0.4093 , v_f1=0.9812*
+05/04 13:36:29 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=07-val_loss=0.4093-val_score=0.9812.ckpt : saved.
+05/04 13:37:46 [INFO] eps=7, lr=4.88e-06, t_loss=0.4328, v_loss=0.4099 , v_f1=0.9793 
+05/04 13:39:02 [INFO] eps=7, lr=4.54e-06, t_loss=0.4303, v_loss=0.4067*, v_f1=0.9814*
+05/04 13:39:03 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=07-val_loss=0.4067-val_score=0.9814.ckpt : saved.
+05/04 13:40:20 [INFO] eps=8, lr=4.22e-06, t_loss=0.4342, v_loss=0.4100 , v_f1=0.9791 
+05/04 13:41:37 [INFO] eps=8, lr=3.93e-06, t_loss=0.4326, v_loss=0.4106 , v_f1=0.9801 
+05/04 13:42:53 [INFO] eps=8, lr=3.65e-06, t_loss=0.4244, v_loss=0.4082 , v_f1=0.9813 
+05/04 13:44:10 [INFO] eps=8, lr=3.4e-06, t_loss=0.4232, v_loss=0.4067 , v_f1=0.9816*
+05/04 13:44:11 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=08-val_loss=0.4067-val_score=0.9816.ckpt : saved.
+05/04 13:45:28 [INFO] eps=9, lr=3.16e-06, t_loss=0.4170, v_loss=0.4092 , v_f1=0.9820*
+05/04 13:45:29 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=09-val_loss=0.4092-val_score=0.9820.ckpt : saved.
+05/04 13:46:46 [INFO] eps=9, lr=2.94e-06, t_loss=0.4221, v_loss=0.4061*, v_f1=0.9798 
+05/04 13:48:02 [INFO] eps=9, lr=2.73e-06, t_loss=0.4227, v_loss=0.4067 , v_f1=0.9806 
+05/04 13:49:19 [INFO] eps=9, lr=2.54e-06, t_loss=0.4213, v_loss=0.4061 , v_f1=0.9804 
+05/04 13:50:36 [INFO] eps=10, lr=2.36e-06, t_loss=0.4122, v_loss=0.4026*, v_f1=0.9812 
+05/04 13:51:52 [INFO] eps=10, lr=2.2e-06, t_loss=0.4106, v_loss=0.4049 , v_f1=0.9806 
+05/04 13:53:09 [INFO] eps=10, lr=2.04e-06, t_loss=0.4172, v_loss=0.4039 , v_f1=0.9805 
+05/04 13:54:26 [INFO] eps=10, lr=1.9e-06, t_loss=0.4165, v_loss=0.4053 , v_f1=0.9806 
+05/04 13:55:42 [INFO] eps=11, lr=1.77e-06, t_loss=0.4206, v_loss=0.4062 , v_f1=0.9799 
+05/04 13:56:59 [INFO] eps=11, lr=1.64e-06, t_loss=0.4138, v_loss=0.4054 , v_f1=0.9808 
+05/04 13:58:16 [INFO] eps=11, lr=1.53e-06, t_loss=0.4122, v_loss=0.4039 , v_f1=0.9825*
+05/04 13:58:17 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=11-val_loss=0.4039-val_score=0.9825.ckpt : saved.
+05/04 13:59:33 [INFO] eps=11, lr=1.42e-06, t_loss=0.4123, v_loss=0.4038 , v_f1=0.9803 
+05/04 14:00:50 [INFO] eps=12, lr=1.32e-06, t_loss=0.4178, v_loss=0.4034 , v_f1=0.9819 
+05/04 14:02:06 [INFO] eps=12, lr=1.23e-06, t_loss=0.4102, v_loss=0.4045 , v_f1=0.9816 
+05/04 14:03:23 [INFO] eps=12, lr=1.14e-06, t_loss=0.4116, v_loss=0.4036 , v_f1=0.9804 
+05/04 14:04:39 [INFO] eps=12, lr=1.06e-06, t_loss=0.4132, v_loss=0.4047 , v_f1=0.9809 
+05/04 14:05:56 [INFO] eps=13, lr=9.89e-07, t_loss=0.4146, v_loss=0.4040 , v_f1=0.9800 
+05/04 14:05:56 [INFO] NO_MORE_TRAINING, best_score=0.9825
+05/04 14:06:14 [INFO] EMA ::: ema_v_loss=0.4034, ema_v_f1=0.9815
+05/04 14:06:15 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=13-val_loss=0.4034-val_score=0.9815-ema.ckpt : (ema) saved.
+05/04 14:06:16 [INFO] fold_idx=1 finished
+05/04 14:06:25 [INFO] fold_idx=2 started
+05/04 14:06:32 [INFO] load_img_size=196
+05/04 14:06:32 [INFO] load_img_size=196
+05/04 14:06:32 [INFO] create_model: timm/eva_large_patch14_196.in22k_ft_in22k_in1k
+05/04 14:06:32 [INFO] Loading pretrained weights from Hugging Face hub (timm/eva_large_patch14_196.in22k_ft_in22k_in1k)
+05/04 14:06:32 [INFO] [timm/eva_large_patch14_196.in22k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 14:06:32 [INFO] use_amp=True
+05/04 14:07:48 [INFO] eps=1, lr=3.22e-05, t_loss=1.3348, v_loss=0.5499*, v_f1=0.9565*
+05/04 14:09:06 [INFO] eps=1, lr=3e-05, t_loss=0.9896, v_loss=0.4769*, v_f1=0.9646*
+05/04 14:10:23 [INFO] eps=1, lr=2.79e-05, t_loss=0.8664, v_loss=0.4608*, v_f1=0.9684*
+05/04 14:11:40 [INFO] eps=1, lr=2.59e-05, t_loss=0.7960, v_loss=0.4477*, v_f1=0.9718*
+05/04 14:12:57 [INFO] eps=2, lr=2.41e-05, t_loss=0.5509, v_loss=0.4411*, v_f1=0.9721*
+05/04 14:14:14 [INFO] eps=2, lr=2.24e-05, t_loss=0.5390, v_loss=0.4365*, v_f1=0.9760*
+05/04 14:14:15 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=02-val_loss=0.4365-val_score=0.9760.ckpt : saved.
+05/04 14:15:32 [INFO] eps=2, lr=2.08e-05, t_loss=0.5395, v_loss=0.4351*, v_f1=0.9766*
+05/04 14:15:33 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=02-val_loss=0.4351-val_score=0.9766.ckpt : saved.
+05/04 14:16:50 [INFO] eps=2, lr=1.94e-05, t_loss=0.5313, v_loss=0.4299*, v_f1=0.9753 
+05/04 14:18:07 [INFO] eps=3, lr=1.8e-05, t_loss=0.4803, v_loss=0.4251*, v_f1=0.9777*
+05/04 14:18:08 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=03-val_loss=0.4251-val_score=0.9777.ckpt : saved.
+05/04 14:19:25 [INFO] eps=3, lr=1.68e-05, t_loss=0.4762, v_loss=0.4246*, v_f1=0.9771 
+05/04 14:20:42 [INFO] eps=3, lr=1.56e-05, t_loss=0.4851, v_loss=0.4259 , v_f1=0.9761 
+05/04 14:21:59 [INFO] eps=3, lr=1.45e-05, t_loss=0.4825, v_loss=0.4229*, v_f1=0.9766 
+05/04 14:23:15 [INFO] eps=4, lr=1.35e-05, t_loss=0.4403, v_loss=0.4218*, v_f1=0.9757 
+05/04 14:24:32 [INFO] eps=4, lr=1.25e-05, t_loss=0.4539, v_loss=0.4204*, v_f1=0.9783*
+05/04 14:24:33 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=04-val_loss=0.4204-val_score=0.9783.ckpt : saved.
+05/04 14:25:50 [INFO] eps=4, lr=1.17e-05, t_loss=0.4541, v_loss=0.4172*, v_f1=0.9771 
+05/04 14:27:06 [INFO] eps=4, lr=1.08e-05, t_loss=0.4585, v_loss=0.4182 , v_f1=0.9776 
+05/04 14:28:23 [INFO] eps=5, lr=1.01e-05, t_loss=0.4399, v_loss=0.4145*, v_f1=0.9776 
+05/04 14:29:39 [INFO] eps=5, lr=9.38e-06, t_loss=0.4410, v_loss=0.4135*, v_f1=0.9794*
+05/04 14:29:40 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=05-val_loss=0.4135-val_score=0.9794.ckpt : saved.
+05/04 14:30:57 [INFO] eps=5, lr=8.73e-06, t_loss=0.4422, v_loss=0.4182 , v_f1=0.9761 
+05/04 14:32:14 [INFO] eps=5, lr=8.11e-06, t_loss=0.4414, v_loss=0.4163 , v_f1=0.9773 
+05/04 14:33:30 [INFO] eps=6, lr=7.55e-06, t_loss=0.4413, v_loss=0.4162 , v_f1=0.9778 
+05/04 14:34:47 [INFO] eps=6, lr=7.02e-06, t_loss=0.4407, v_loss=0.4165 , v_f1=0.9761 
+05/04 14:36:04 [INFO] eps=6, lr=6.53e-06, t_loss=0.4395, v_loss=0.4128*, v_f1=0.9789 
+05/04 14:37:21 [INFO] eps=6, lr=6.07e-06, t_loss=0.4398, v_loss=0.4142 , v_f1=0.9786 
+05/04 14:38:38 [INFO] eps=7, lr=5.65e-06, t_loss=0.4260, v_loss=0.4123*, v_f1=0.9790 
+05/04 14:39:54 [INFO] eps=7, lr=5.25e-06, t_loss=0.4236, v_loss=0.4125 , v_f1=0.9796*
+05/04 14:39:55 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=07-val_loss=0.4125-val_score=0.9796.ckpt : saved.
+05/04 14:41:12 [INFO] eps=7, lr=4.88e-06, t_loss=0.4201, v_loss=0.4080*, v_f1=0.9798*
+05/04 14:41:13 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=07-val_loss=0.4080-val_score=0.9798.ckpt : saved.
+05/04 14:42:29 [INFO] eps=7, lr=4.54e-06, t_loss=0.4211, v_loss=0.4098 , v_f1=0.9795 
+05/04 14:43:46 [INFO] eps=8, lr=4.22e-06, t_loss=0.4346, v_loss=0.4099 , v_f1=0.9783 
+05/04 14:45:03 [INFO] eps=8, lr=3.93e-06, t_loss=0.4272, v_loss=0.4097 , v_f1=0.9791 
+05/04 14:46:20 [INFO] eps=8, lr=3.65e-06, t_loss=0.4293, v_loss=0.4092 , v_f1=0.9805*
+05/04 14:46:21 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=08-val_loss=0.4092-val_score=0.9805.ckpt : saved.
+05/04 14:47:38 [INFO] eps=8, lr=3.4e-06, t_loss=0.4282, v_loss=0.4083 , v_f1=0.9811*
+05/04 14:47:39 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=08-val_loss=0.4083-val_score=0.9811.ckpt : saved.
+05/04 14:48:56 [INFO] eps=9, lr=3.16e-06, t_loss=0.4185, v_loss=0.4092 , v_f1=0.9804 
+05/04 14:50:13 [INFO] eps=9, lr=2.94e-06, t_loss=0.4149, v_loss=0.4099 , v_f1=0.9805 
+05/04 14:51:30 [INFO] eps=9, lr=2.73e-06, t_loss=0.4146, v_loss=0.4118 , v_f1=0.9785 
+05/04 14:52:46 [INFO] eps=9, lr=2.54e-06, t_loss=0.4167, v_loss=0.4109 , v_f1=0.9792 
+05/04 14:54:03 [INFO] eps=10, lr=2.36e-06, t_loss=0.4172, v_loss=0.4120 , v_f1=0.9808 
+05/04 14:55:20 [INFO] eps=10, lr=2.2e-06, t_loss=0.4147, v_loss=0.4129 , v_f1=0.9795 
+05/04 14:55:20 [INFO] NO_MORE_TRAINING, best_score=0.9811
+05/04 14:55:38 [INFO] EMA ::: ema_v_loss=0.4088, ema_v_f1=0.9798
+05/04 14:55:39 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=10-val_loss=0.4088-val_score=0.9798-ema.ckpt : (ema) saved.
+05/04 14:55:39 [INFO] fold_idx=2 finished
+05/04 14:55:48 [INFO] fold_idx=3 started
+05/04 14:55:55 [INFO] load_img_size=196
+05/04 14:55:55 [INFO] load_img_size=196
+05/04 14:55:55 [INFO] create_model: timm/eva_large_patch14_196.in22k_ft_in22k_in1k
+05/04 14:55:55 [INFO] Loading pretrained weights from Hugging Face hub (timm/eva_large_patch14_196.in22k_ft_in22k_in1k)
+05/04 14:55:56 [INFO] [timm/eva_large_patch14_196.in22k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 14:55:56 [INFO] use_amp=True
+05/04 14:57:12 [INFO] eps=1, lr=3.22e-05, t_loss=1.2803, v_loss=0.5308*, v_f1=0.9616*
+05/04 14:58:29 [INFO] eps=1, lr=3e-05, t_loss=0.9696, v_loss=0.4704*, v_f1=0.9659*
+05/04 14:59:46 [INFO] eps=1, lr=2.79e-05, t_loss=0.8603, v_loss=0.4494*, v_f1=0.9714*
+05/04 15:01:03 [INFO] eps=1, lr=2.59e-05, t_loss=0.7913, v_loss=0.4398*, v_f1=0.9743*
+05/04 15:02:19 [INFO] eps=2, lr=2.41e-05, t_loss=0.5499, v_loss=0.4262*, v_f1=0.9764*
+05/04 15:02:21 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=02-val_loss=0.4262-val_score=0.9764.ckpt : saved.
+05/04 15:03:37 [INFO] eps=2, lr=2.24e-05, t_loss=0.5425, v_loss=0.4211*, v_f1=0.9782*
+05/04 15:03:39 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=02-val_loss=0.4211-val_score=0.9782.ckpt : saved.
+05/04 15:04:55 [INFO] eps=2, lr=2.08e-05, t_loss=0.5333, v_loss=0.4175*, v_f1=0.9778 
+05/04 15:06:12 [INFO] eps=2, lr=1.94e-05, t_loss=0.5289, v_loss=0.4206 , v_f1=0.9765 
+05/04 15:07:29 [INFO] eps=3, lr=1.8e-05, t_loss=0.5095, v_loss=0.4137*, v_f1=0.9789*
+05/04 15:07:30 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=03-val_loss=0.4137-val_score=0.9789.ckpt : saved.
+05/04 15:08:47 [INFO] eps=3, lr=1.68e-05, t_loss=0.4969, v_loss=0.4150 , v_f1=0.9782 
+05/04 15:10:04 [INFO] eps=3, lr=1.56e-05, t_loss=0.4925, v_loss=0.4140 , v_f1=0.9784 
+05/04 15:11:21 [INFO] eps=3, lr=1.45e-05, t_loss=0.4906, v_loss=0.4111*, v_f1=0.9802*
+05/04 15:11:22 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=03-val_loss=0.4111-val_score=0.9802.ckpt : saved.
+05/04 15:12:39 [INFO] eps=4, lr=1.35e-05, t_loss=0.4611, v_loss=0.4064*, v_f1=0.9789 
+05/04 15:13:56 [INFO] eps=4, lr=1.25e-05, t_loss=0.4653, v_loss=0.4079 , v_f1=0.9796 
+05/04 15:15:13 [INFO] eps=4, lr=1.17e-05, t_loss=0.4636, v_loss=0.4106 , v_f1=0.9792 
+05/04 15:16:30 [INFO] eps=4, lr=1.08e-05, t_loss=0.4597, v_loss=0.4043*, v_f1=0.9810*
+05/04 15:16:31 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=04-val_loss=0.4043-val_score=0.9810.ckpt : saved.
+05/04 15:17:47 [INFO] eps=5, lr=1.01e-05, t_loss=0.4433, v_loss=0.4032*, v_f1=0.9819*
+05/04 15:17:49 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=05-val_loss=0.4032-val_score=0.9819.ckpt : saved.
+05/04 15:19:06 [INFO] eps=5, lr=9.38e-06, t_loss=0.4522, v_loss=0.4052 , v_f1=0.9809 
+05/04 15:20:23 [INFO] eps=5, lr=8.73e-06, t_loss=0.4478, v_loss=0.4039 , v_f1=0.9816 
+05/04 15:21:40 [INFO] eps=5, lr=8.11e-06, t_loss=0.4470, v_loss=0.4059 , v_f1=0.9805 
+05/04 15:22:57 [INFO] eps=6, lr=7.55e-06, t_loss=0.4250, v_loss=0.4075 , v_f1=0.9813 
+05/04 15:24:13 [INFO] eps=6, lr=7.02e-06, t_loss=0.4251, v_loss=0.4060 , v_f1=0.9803 
+05/04 15:25:30 [INFO] eps=6, lr=6.53e-06, t_loss=0.4292, v_loss=0.4051 , v_f1=0.9808 
+05/04 15:25:30 [INFO] NO_MORE_TRAINING, best_score=0.9819
+05/04 15:25:48 [INFO] EMA ::: ema_v_loss=0.4021, ema_v_f1=0.9822
+05/04 15:25:49 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=06-val_loss=0.4021-val_score=0.9822-ema.ckpt : (ema) saved.
+05/04 15:25:49 [INFO] fold_idx=3 finished
+05/04 15:25:55 [INFO] fold_idx=4 started
+05/04 15:26:02 [INFO] load_img_size=196
+05/04 15:26:02 [INFO] load_img_size=196
+05/04 15:26:02 [INFO] create_model: timm/eva_large_patch14_196.in22k_ft_in22k_in1k
+05/04 15:26:02 [INFO] Loading pretrained weights from Hugging Face hub (timm/eva_large_patch14_196.in22k_ft_in22k_in1k)
+05/04 15:26:02 [INFO] [timm/eva_large_patch14_196.in22k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 15:26:03 [INFO] use_amp=True
+05/04 15:27:19 [INFO] eps=1, lr=3.22e-05, t_loss=1.2986, v_loss=0.5227*, v_f1=0.9617*
+05/04 15:28:36 [INFO] eps=1, lr=3e-05, t_loss=0.9673, v_loss=0.4713*, v_f1=0.9640*
+05/04 15:29:53 [INFO] eps=1, lr=2.79e-05, t_loss=0.8445, v_loss=0.4542*, v_f1=0.9699*
+05/04 15:31:10 [INFO] eps=1, lr=2.59e-05, t_loss=0.7824, v_loss=0.4464*, v_f1=0.9701*
+05/04 15:32:27 [INFO] eps=2, lr=2.41e-05, t_loss=0.5312, v_loss=0.4381*, v_f1=0.9730*
+05/04 15:33:44 [INFO] eps=2, lr=2.24e-05, t_loss=0.5346, v_loss=0.4364*, v_f1=0.9713 
+05/04 15:35:01 [INFO] eps=2, lr=2.08e-05, t_loss=0.5348, v_loss=0.4277*, v_f1=0.9765*
+05/04 15:35:02 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=02-val_loss=0.4277-val_score=0.9765.ckpt : saved.
+05/04 15:36:19 [INFO] eps=2, lr=1.94e-05, t_loss=0.5301, v_loss=0.4243*, v_f1=0.9744 
+05/04 15:37:36 [INFO] eps=3, lr=1.8e-05, t_loss=0.4745, v_loss=0.4156*, v_f1=0.9793*
+05/04 15:37:37 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=03-val_loss=0.4156-val_score=0.9793.ckpt : saved.
+05/04 15:38:54 [INFO] eps=3, lr=1.68e-05, t_loss=0.4849, v_loss=0.4239 , v_f1=0.9757 
+05/04 15:40:11 [INFO] eps=3, lr=1.56e-05, t_loss=0.4858, v_loss=0.4224 , v_f1=0.9775 
+05/04 15:41:28 [INFO] eps=3, lr=1.45e-05, t_loss=0.4891, v_loss=0.4161 , v_f1=0.9781 
+05/04 15:42:45 [INFO] eps=4, lr=1.35e-05, t_loss=0.4644, v_loss=0.4174 , v_f1=0.9783 
+05/04 15:44:02 [INFO] eps=4, lr=1.25e-05, t_loss=0.4600, v_loss=0.4172 , v_f1=0.9781 
+05/04 15:45:19 [INFO] eps=4, lr=1.17e-05, t_loss=0.4593, v_loss=0.4110*, v_f1=0.9806*
+05/04 15:45:20 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=04-val_loss=0.4110-val_score=0.9806.ckpt : saved.
+05/04 15:46:37 [INFO] eps=4, lr=1.08e-05, t_loss=0.4599, v_loss=0.4133 , v_f1=0.9778 
+05/04 15:47:54 [INFO] eps=5, lr=1.01e-05, t_loss=0.4421, v_loss=0.4102*, v_f1=0.9812*
+05/04 15:47:55 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=05-val_loss=0.4102-val_score=0.9812.ckpt : saved.
+05/04 15:49:12 [INFO] eps=5, lr=9.38e-06, t_loss=0.4394, v_loss=0.4076*, v_f1=0.9828*
+05/04 15:49:13 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=05-val_loss=0.4076-val_score=0.9828.ckpt : saved.
+05/04 15:50:30 [INFO] eps=5, lr=8.73e-06, t_loss=0.4436, v_loss=0.4100 , v_f1=0.9793 
+05/04 15:51:46 [INFO] eps=5, lr=8.11e-06, t_loss=0.4445, v_loss=0.4091 , v_f1=0.9819 
+05/04 15:53:03 [INFO] eps=6, lr=7.55e-06, t_loss=0.4408, v_loss=0.4106 , v_f1=0.9822 
+05/04 15:54:20 [INFO] eps=6, lr=7.02e-06, t_loss=0.4395, v_loss=0.4081 , v_f1=0.9818 
+05/04 15:55:37 [INFO] eps=6, lr=6.53e-06, t_loss=0.4373, v_loss=0.4078 , v_f1=0.9825 
+05/04 15:56:54 [INFO] eps=6, lr=6.07e-06, t_loss=0.4398, v_loss=0.4065*, v_f1=0.9837*
+05/04 15:56:55 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=06-val_loss=0.4065-val_score=0.9837.ckpt : saved.
+05/04 15:58:12 [INFO] eps=7, lr=5.65e-06, t_loss=0.4296, v_loss=0.4032*, v_f1=0.9834 
+05/04 15:59:29 [INFO] eps=7, lr=5.25e-06, t_loss=0.4311, v_loss=0.4069 , v_f1=0.9824 
+05/04 16:00:46 [INFO] eps=7, lr=4.88e-06, t_loss=0.4282, v_loss=0.4060 , v_f1=0.9829 
+05/04 16:02:03 [INFO] eps=7, lr=4.54e-06, t_loss=0.4251, v_loss=0.4042 , v_f1=0.9824 
+05/04 16:03:20 [INFO] eps=8, lr=4.22e-06, t_loss=0.4131, v_loss=0.4053 , v_f1=0.9830 
+05/04 16:04:36 [INFO] eps=8, lr=3.93e-06, t_loss=0.4198, v_loss=0.4089 , v_f1=0.9826 
+05/04 16:05:53 [INFO] eps=8, lr=3.65e-06, t_loss=0.4182, v_loss=0.4055 , v_f1=0.9827 
+05/04 16:05:53 [INFO] NO_MORE_TRAINING, best_score=0.9837
+05/04 16:06:10 [INFO] EMA ::: ema_v_loss=0.4030, ema_v_f1=0.9837
+05/04 16:06:11 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=08-val_loss=0.4030-val_score=0.9837-ema.ckpt : (ema) saved.
+05/04 16:06:12 [INFO] fold_idx=4 finished
+##
+05/04 16:08:47 [INFO] program started
+05/04 16:08:47 [INFO] {'SEED': 42, 'N_SPLIT': 5, 'LABEL_SMOOTHING': 0.05, 'OPTIMIZER': 'AdamW', 'INTERPOLATION': 'robidouxsharp', 'PRECISION': '16', 'MODEL_NAME': 'timm/eva_large_patch14_196.in22k_ft_in22k_in1k', 'IMG_SIZE': 196, 'BATCH_SIZE': 48, 'LR': [1.7320508075688774e-05, 1e-06], 'IMG_TRAIN_SIZE': 196}
+05/04 16:08:47 [INFO] cuda
+05/04 16:08:47 [INFO] seed_everything : 42
+05/04 16:08:48 [INFO] fold_idx=0 started
+05/04 16:08:48 [ERRO] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+05/04 16:08:57 [INFO] load_img_size=196
+05/04 16:08:57 [INFO] load_img_size=196
+05/04 16:08:57 [INFO] create_model: timm/eva_large_patch14_196.in22k_ft_in22k_in1k
+05/04 16:08:57 [INFO] Loading pretrained weights from Hugging Face hub (timm/eva_large_patch14_196.in22k_ft_in22k_in1k)
+05/04 16:08:57 [INFO] [timm/eva_large_patch14_196.in22k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/04 16:08:58 [INFO] use_amp=True
+05/04 16:10:14 [INFO] eps=1, lr=3.22e-05, t_loss=1.3401, v_loss=0.5454*, v_f1=0.9594*
+05/04 16:11:30 [INFO] eps=1, lr=3e-05, t_loss=0.9919, v_loss=0.4668*, v_f1=0.9680*
+05/04 16:12:47 [INFO] eps=1, lr=2.79e-05, t_loss=0.8636, v_loss=0.4513*, v_f1=0.9704*
+05/04 16:14:05 [INFO] eps=1, lr=2.59e-05, t_loss=0.7922, v_loss=0.4475*, v_f1=0.9749*
+05/04 16:15:22 [INFO] eps=2, lr=2.41e-05, t_loss=0.5223, v_loss=0.4340*, v_f1=0.9753*
+05/04 16:15:23 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=02-val_loss=0.4340-val_score=0.9753.ckpt : saved.
+05/04 16:16:40 [INFO] eps=2, lr=2.24e-05, t_loss=0.5250, v_loss=0.4370 , v_f1=0.9742 
+05/04 16:17:56 [INFO] eps=2, lr=2.08e-05, t_loss=0.5274, v_loss=0.4377 , v_f1=0.9739 
+05/04 16:19:13 [INFO] eps=2, lr=1.94e-05, t_loss=0.5230, v_loss=0.4337*, v_f1=0.9742 
+05/04 16:20:30 [INFO] eps=3, lr=1.8e-05, t_loss=0.4840, v_loss=0.4275*, v_f1=0.9769*
+05/04 16:20:31 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=03-val_loss=0.4275-val_score=0.9769.ckpt : saved.
+05/04 16:21:48 [INFO] eps=3, lr=1.68e-05, t_loss=0.4779, v_loss=0.4288 , v_f1=0.9748 
+05/04 16:23:05 [INFO] eps=3, lr=1.56e-05, t_loss=0.4796, v_loss=0.4249*, v_f1=0.9758 
+05/04 16:24:22 [INFO] eps=3, lr=1.45e-05, t_loss=0.4765, v_loss=0.4186*, v_f1=0.9771*
+05/04 16:24:23 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=03-val_loss=0.4186-val_score=0.9771.ckpt : saved.
+05/04 16:25:39 [INFO] eps=4, lr=1.35e-05, t_loss=0.4654, v_loss=0.4182*, v_f1=0.9780*
+05/04 16:25:40 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=04-val_loss=0.4182-val_score=0.9780.ckpt : saved.
+05/04 16:26:57 [INFO] eps=4, lr=1.25e-05, t_loss=0.4656, v_loss=0.4189 , v_f1=0.9778 
+05/04 16:28:14 [INFO] eps=4, lr=1.17e-05, t_loss=0.4668, v_loss=0.4149*, v_f1=0.9776 
+05/04 16:29:31 [INFO] eps=4, lr=1.08e-05, t_loss=0.4673, v_loss=0.4117*, v_f1=0.9800*
+05/04 16:29:32 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=04-val_loss=0.4117-val_score=0.9800.ckpt : saved.
+05/04 16:30:49 [INFO] eps=5, lr=1.01e-05, t_loss=0.4510, v_loss=0.4111*, v_f1=0.9811*
+05/04 16:30:50 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=05-val_loss=0.4111-val_score=0.9811.ckpt : saved.
+05/04 16:32:07 [INFO] eps=5, lr=9.38e-06, t_loss=0.4447, v_loss=0.4154 , v_f1=0.9792 
+05/04 16:33:24 [INFO] eps=5, lr=8.73e-06, t_loss=0.4434, v_loss=0.4112 , v_f1=0.9793 
+05/04 16:34:40 [INFO] eps=5, lr=8.11e-06, t_loss=0.4460, v_loss=0.4108*, v_f1=0.9804 
+05/04 16:35:57 [INFO] eps=6, lr=7.55e-06, t_loss=0.4463, v_loss=0.4092*, v_f1=0.9797 
+05/04 16:37:14 [INFO] eps=6, lr=7.02e-06, t_loss=0.4421, v_loss=0.4127 , v_f1=0.9794 
+05/04 16:38:31 [INFO] eps=6, lr=6.53e-06, t_loss=0.4433, v_loss=0.4109 , v_f1=0.9798 
+05/04 16:39:48 [INFO] eps=6, lr=6.07e-06, t_loss=0.4429, v_loss=0.4118 , v_f1=0.9791 
+05/04 16:41:04 [INFO] eps=7, lr=5.65e-06, t_loss=0.4297, v_loss=0.4120 , v_f1=0.9791 
+05/04 16:42:21 [INFO] eps=7, lr=5.25e-06, t_loss=0.4315, v_loss=0.4097 , v_f1=0.9807 
+05/04 16:43:37 [INFO] eps=7, lr=4.88e-06, t_loss=0.4281, v_loss=0.4134 , v_f1=0.9785 
+05/04 16:43:37 [INFO] NO_MORE_TRAINING, best_score=0.9811
+05/04 16:43:55 [INFO] EMA ::: ema_v_loss=0.4080, ema_v_f1=0.9804
+05/04 16:43:56 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=07-val_loss=0.4080-val_score=0.9804-ema.ckpt : (ema) saved.
+05/04 16:43:56 [INFO] fold_idx=0 finished

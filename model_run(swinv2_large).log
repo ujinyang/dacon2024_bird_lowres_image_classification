@@ -1,0 +1,412 @@
+# model_name : swinv2-large-patch4-window12-192-22k
+
+
+05/05 08:48:47 [INFO] program started
+05/05 08:48:47 [INFO] {'SEED': 42, 'N_SPLIT': 5, 'LABEL_SMOOTHING': 0.05, 'OPTIMIZER': 'AdamW', 'INTERPOLATION': 'robidouxsharp', 'PRECISION': '16', 'MODEL_NAME': 'microsoft/swinv2-large-patch4-window12-192-22k', 'IMG_SIZE': 192, 'BATCH_SIZE': 40, 'LR': [1.5811388300841898e-05, 1e-07], 'IMG_TRAIN_SIZE': 192}
+05/05 08:48:47 [INFO] cuda
+05/05 08:48:47 [INFO] seed_everything : 42
+05/05 08:48:48 [INFO] fold_idx=0 started
+05/05 08:48:48 [ERRO] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+05/05 08:48:56 [INFO] load_img_size=192
+05/05 08:48:56 [INFO] load_img_size=192
+05/05 08:48:56 [INFO] create_model: microsoft/swinv2-large-patch4-window12-192-22k
+05/05 08:50:23 [INFO] use_amp=True
+05/05 08:52:38 [INFO] eps=1, lr=2.94e-05, t_loss=1.7544, v_loss=0.6558*, v_f1=0.9249*
+05/05 08:54:52 [INFO] eps=1, lr=2.74e-05, t_loss=1.2980, v_loss=0.5509*, v_f1=0.9505*
+05/05 08:57:05 [INFO] eps=1, lr=2.54e-05, t_loss=1.1220, v_loss=0.5240*, v_f1=0.9606*
+05/05 08:59:19 [INFO] eps=1, lr=2.37e-05, t_loss=1.0235, v_loss=0.5058*, v_f1=0.9618*
+05/05 09:00:49 [INFO] eps=2, lr=2.2e-05, t_loss=0.6442, v_loss=0.4929*, v_f1=0.9647*
+05/05 09:02:19 [INFO] eps=2, lr=2.05e-05, t_loss=0.6330, v_loss=0.4836*, v_f1=0.9644 
+05/05 09:03:48 [INFO] eps=2, lr=1.9e-05, t_loss=0.6381, v_loss=0.4759*, v_f1=0.9680*
+05/05 09:05:18 [INFO] eps=2, lr=1.77e-05, t_loss=0.6291, v_loss=0.4730*, v_f1=0.9670 
+05/05 09:06:47 [INFO] eps=3, lr=1.65e-05, t_loss=0.5807, v_loss=0.4683*, v_f1=0.9689*
+05/05 09:08:17 [INFO] eps=3, lr=1.53e-05, t_loss=0.5849, v_loss=0.4654*, v_f1=0.9707*
+05/05 09:09:47 [INFO] eps=3, lr=1.42e-05, t_loss=0.5881, v_loss=0.4614*, v_f1=0.9707*
+05/05 09:11:16 [INFO] eps=3, lr=1.32e-05, t_loss=0.5789, v_loss=0.4581*, v_f1=0.9719*
+05/05 09:12:46 [INFO] eps=4, lr=1.23e-05, t_loss=0.5457, v_loss=0.4589 , v_f1=0.9686 
+05/05 09:14:15 [INFO] eps=4, lr=1.14e-05, t_loss=0.5542, v_loss=0.4530*, v_f1=0.9718 
+05/05 09:15:45 [INFO] eps=4, lr=1.06e-05, t_loss=0.5485, v_loss=0.4518*, v_f1=0.9705 
+05/05 09:17:14 [INFO] eps=4, lr=9.9e-06, t_loss=0.5430, v_loss=0.4546 , v_f1=0.9709 
+05/05 09:18:44 [INFO] eps=5, lr=9.21e-06, t_loss=0.5364, v_loss=0.4472*, v_f1=0.9729*
+05/05 09:20:13 [INFO] eps=5, lr=8.56e-06, t_loss=0.5238, v_loss=0.4487 , v_f1=0.9715 
+05/05 09:21:43 [INFO] eps=5, lr=7.96e-06, t_loss=0.5207, v_loss=0.4474 , v_f1=0.9729*
+05/05 09:23:12 [INFO] eps=5, lr=7.41e-06, t_loss=0.5207, v_loss=0.4472*, v_f1=0.9731*
+05/05 09:24:41 [INFO] eps=6, lr=6.89e-06, t_loss=0.5309, v_loss=0.4443*, v_f1=0.9731 
+05/05 09:26:10 [INFO] eps=6, lr=6.41e-06, t_loss=0.5084, v_loss=0.4456 , v_f1=0.9737*
+05/05 09:27:40 [INFO] eps=6, lr=5.96e-06, t_loss=0.5096, v_loss=0.4413*, v_f1=0.9746*
+05/05 09:29:09 [INFO] eps=6, lr=5.54e-06, t_loss=0.5076, v_loss=0.4433 , v_f1=0.9744 
+05/05 09:30:39 [INFO] eps=7, lr=5.15e-06, t_loss=0.5004, v_loss=0.4414 , v_f1=0.9720 
+05/05 09:32:08 [INFO] eps=7, lr=4.79e-06, t_loss=0.5085, v_loss=0.4404*, v_f1=0.9727 
+05/05 09:33:38 [INFO] eps=7, lr=4.46e-06, t_loss=0.5031, v_loss=0.4397*, v_f1=0.9742 
+05/05 09:35:07 [INFO] eps=7, lr=4.14e-06, t_loss=0.5028, v_loss=0.4394*, v_f1=0.9733 
+05/05 09:36:37 [INFO] eps=8, lr=3.85e-06, t_loss=0.4924, v_loss=0.4372*, v_f1=0.9753*
+05/05 09:36:38 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=08-val_loss=0.4372-val_score=0.9753.ckpt : saved.
+05/05 09:38:07 [INFO] eps=8, lr=3.58e-06, t_loss=0.4875, v_loss=0.4374 , v_f1=0.9753 
+05/05 09:39:36 [INFO] eps=8, lr=3.33e-06, t_loss=0.4865, v_loss=0.4384 , v_f1=0.9743 
+05/05 09:41:06 [INFO] eps=8, lr=3.1e-06, t_loss=0.4843, v_loss=0.4376 , v_f1=0.9747 
+05/05 09:42:35 [INFO] eps=9, lr=2.88e-06, t_loss=0.4804, v_loss=0.4367*, v_f1=0.9752 
+05/05 09:44:05 [INFO] eps=9, lr=2.68e-06, t_loss=0.4724, v_loss=0.4365*, v_f1=0.9743 
+05/05 09:45:34 [INFO] eps=9, lr=2.49e-06, t_loss=0.4793, v_loss=0.4371 , v_f1=0.9744 
+05/05 09:47:03 [INFO] eps=9, lr=2.32e-06, t_loss=0.4827, v_loss=0.4366 , v_f1=0.9750 
+05/05 09:48:33 [INFO] eps=10, lr=2.16e-06, t_loss=0.4647, v_loss=0.4384 , v_f1=0.9746 
+05/05 09:50:02 [INFO] eps=10, lr=2.01e-06, t_loss=0.4785, v_loss=0.4372 , v_f1=0.9750 
+05/05 09:51:31 [INFO] eps=10, lr=1.87e-06, t_loss=0.4789, v_loss=0.4362*, v_f1=0.9762*
+05/05 09:51:32 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=10-val_loss=0.4362-val_score=0.9762.ckpt : saved.
+05/05 09:53:01 [INFO] eps=10, lr=1.74e-06, t_loss=0.4758, v_loss=0.4368 , v_f1=0.9760 
+05/05 09:54:31 [INFO] eps=11, lr=1.61e-06, t_loss=0.4662, v_loss=0.4359*, v_f1=0.9759 
+05/05 09:56:00 [INFO] eps=11, lr=1.5e-06, t_loss=0.4711, v_loss=0.4360 , v_f1=0.9765*
+05/05 09:56:01 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=11-val_loss=0.4360-val_score=0.9765.ckpt : saved.
+05/05 09:57:31 [INFO] eps=11, lr=1.4e-06, t_loss=0.4743, v_loss=0.4360 , v_f1=0.9765*
+05/05 09:57:32 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=11-val_loss=0.4360-val_score=0.9765.ckpt : saved.
+05/05 09:59:01 [INFO] eps=11, lr=1.3e-06, t_loss=0.4712, v_loss=0.4365 , v_f1=0.9756 
+05/05 10:00:31 [INFO] eps=12, lr=1.21e-06, t_loss=0.4744, v_loss=0.4362 , v_f1=0.9766*
+05/05 10:00:32 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=12-val_loss=0.4362-val_score=0.9766.ckpt : saved.
+05/05 10:02:01 [INFO] eps=12, lr=1.12e-06, t_loss=0.4679, v_loss=0.4359 , v_f1=0.9765 
+05/05 10:03:31 [INFO] eps=12, lr=1.04e-06, t_loss=0.4649, v_loss=0.4357*, v_f1=0.9759 
+05/05 10:05:00 [INFO] eps=12, lr=9.71e-07, t_loss=0.4671, v_loss=0.4354*, v_f1=0.9762 
+05/05 10:06:29 [INFO] eps=13, lr=9.03e-07, t_loss=0.4752, v_loss=0.4351*, v_f1=0.9762 
+05/05 10:07:58 [INFO] eps=13, lr=8.4e-07, t_loss=0.4676, v_loss=0.4360 , v_f1=0.9753 
+05/05 10:09:28 [INFO] eps=13, lr=7.81e-07, t_loss=0.4681, v_loss=0.4362 , v_f1=0.9762 
+05/05 10:10:57 [INFO] eps=13, lr=7.26e-07, t_loss=0.4674, v_loss=0.4354 , v_f1=0.9759 
+05/05 10:12:27 [INFO] eps=14, lr=6.75e-07, t_loss=0.4704, v_loss=0.4355 , v_f1=0.9762 
+05/05 10:13:56 [INFO] eps=14, lr=6.28e-07, t_loss=0.4709, v_loss=0.4352 , v_f1=0.9756 
+05/05 10:15:25 [INFO] eps=14, lr=5.84e-07, t_loss=0.4712, v_loss=0.4346*, v_f1=0.9747 
+05/05 10:16:55 [INFO] eps=14, lr=5.43e-07, t_loss=0.4736, v_loss=0.4347 , v_f1=0.9747 
+05/05 10:18:24 [INFO] eps=15, lr=5.05e-07, t_loss=0.4603, v_loss=0.4349 , v_f1=0.9750 
+05/05 10:19:53 [INFO] eps=15, lr=4.7e-07, t_loss=0.4685, v_loss=0.4350 , v_f1=0.9756 
+05/05 10:21:23 [INFO] eps=15, lr=4.37e-07, t_loss=0.4729, v_loss=0.4353 , v_f1=0.9750 
+05/05 10:22:52 [INFO] eps=15, lr=4.06e-07, t_loss=0.4702, v_loss=0.4352 , v_f1=0.9753 
+05/05 10:24:21 [INFO] eps=16, lr=3.78e-07, t_loss=0.4653, v_loss=0.4351 , v_f1=0.9768*
+05/05 10:24:22 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=16-val_loss=0.4351-val_score=0.9768.ckpt : saved.
+05/05 10:25:52 [INFO] eps=16, lr=3.52e-07, t_loss=0.4723, v_loss=0.4351 , v_f1=0.9765 
+05/05 10:27:21 [INFO] eps=16, lr=3.27e-07, t_loss=0.4712, v_loss=0.4348 , v_f1=0.9765 
+05/05 10:28:51 [INFO] eps=16, lr=3.04e-07, t_loss=0.4699, v_loss=0.4347 , v_f1=0.9762 
+05/05 10:30:20 [INFO] eps=17, lr=2.83e-07, t_loss=0.4741, v_loss=0.4345*, v_f1=0.9765 
+05/05 10:31:50 [INFO] eps=17, lr=2.63e-07, t_loss=0.4734, v_loss=0.4344*, v_f1=0.9765 
+05/05 10:33:19 [INFO] eps=17, lr=2.45e-07, t_loss=0.4760, v_loss=0.4344 , v_f1=0.9769*
+05/05 10:33:20 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=17-val_loss=0.4344-val_score=0.9769.ckpt : saved.
+05/05 10:34:50 [INFO] eps=17, lr=2.27e-07, t_loss=0.4729, v_loss=0.4345 , v_f1=0.9765 
+05/05 10:36:19 [INFO] eps=18, lr=2.12e-07, t_loss=0.4652, v_loss=0.4343*, v_f1=0.9765 
+05/05 10:37:49 [INFO] eps=18, lr=1.97e-07, t_loss=0.4647, v_loss=0.4342*, v_f1=0.9765 
+05/05 10:39:18 [INFO] eps=18, lr=1.83e-07, t_loss=0.4653, v_loss=0.4344 , v_f1=0.9765 
+05/05 10:40:47 [INFO] eps=18, lr=1.7e-07, t_loss=0.4696, v_loss=0.4344 , v_f1=0.9769 
+05/05 10:42:16 [INFO] eps=19, lr=1.58e-07, t_loss=0.4729, v_loss=0.4345 , v_f1=0.9769 
+05/05 10:43:46 [INFO] eps=19, lr=1.47e-07, t_loss=0.4682, v_loss=0.4344 , v_f1=0.9769 
+05/05 10:45:15 [INFO] eps=19, lr=1.37e-07, t_loss=0.4664, v_loss=0.4343 , v_f1=0.9769 
+05/05 10:46:45 [INFO] eps=19, lr=1.27e-07, t_loss=0.4697, v_loss=0.4343 , v_f1=0.9769 
+05/05 10:46:45 [INFO] NO_MORE_TRAINING, best_score=0.9769
+05/05 10:47:05 [INFO] EMA ::: ema_v_loss=0.4345, ema_v_f1=0.9769
+05/05 10:47:06 [INFO] ./ckpt/swinv2-fold_idx=0-epoch=19-val_loss=0.4345-val_score=0.9769-ema.ckpt : (ema) saved.
+05/05 10:47:06 [INFO] fold_idx=0 finished
+05/05 10:47:14 [INFO] fold_idx=1 started
+05/05 10:47:21 [INFO] load_img_size=192
+05/05 10:47:21 [INFO] load_img_size=192
+05/05 10:47:21 [INFO] create_model: microsoft/swinv2-large-patch4-window12-192-22k
+05/05 10:47:23 [INFO] use_amp=True
+05/05 10:48:53 [INFO] eps=1, lr=2.94e-05, t_loss=1.6760, v_loss=0.6758*, v_f1=0.9238*
+05/05 10:50:22 [INFO] eps=1, lr=2.74e-05, t_loss=1.2569, v_loss=0.5808*, v_f1=0.9444*
+05/05 10:51:52 [INFO] eps=1, lr=2.54e-05, t_loss=1.0851, v_loss=0.5427*, v_f1=0.9458*
+05/05 10:53:22 [INFO] eps=1, lr=2.37e-05, t_loss=0.9917, v_loss=0.5230*, v_f1=0.9544*
+05/05 10:54:52 [INFO] eps=2, lr=2.2e-05, t_loss=0.6542, v_loss=0.5035*, v_f1=0.9579*
+05/05 10:56:21 [INFO] eps=2, lr=2.05e-05, t_loss=0.6445, v_loss=0.4946*, v_f1=0.9622*
+05/05 10:57:51 [INFO] eps=2, lr=1.9e-05, t_loss=0.6353, v_loss=0.4859*, v_f1=0.9615 
+05/05 10:59:21 [INFO] eps=2, lr=1.77e-05, t_loss=0.6326, v_loss=0.4802*, v_f1=0.9639*
+05/05 11:00:50 [INFO] eps=3, lr=1.65e-05, t_loss=0.5799, v_loss=0.4751*, v_f1=0.9609 
+05/05 11:02:20 [INFO] eps=3, lr=1.53e-05, t_loss=0.5709, v_loss=0.4677*, v_f1=0.9656*
+05/05 11:03:49 [INFO] eps=3, lr=1.42e-05, t_loss=0.5680, v_loss=0.4686 , v_f1=0.9650 
+05/05 11:05:19 [INFO] eps=3, lr=1.32e-05, t_loss=0.5671, v_loss=0.4652*, v_f1=0.9675*
+05/05 11:06:48 [INFO] eps=4, lr=1.23e-05, t_loss=0.5410, v_loss=0.4598*, v_f1=0.9678*
+05/05 11:08:17 [INFO] eps=4, lr=1.14e-05, t_loss=0.5410, v_loss=0.4567*, v_f1=0.9678 
+05/05 11:09:47 [INFO] eps=4, lr=1.06e-05, t_loss=0.5394, v_loss=0.4564*, v_f1=0.9668 
+05/05 11:11:16 [INFO] eps=4, lr=9.9e-06, t_loss=0.5360, v_loss=0.4569 , v_f1=0.9648 
+05/05 11:12:45 [INFO] eps=5, lr=9.21e-06, t_loss=0.5157, v_loss=0.4538*, v_f1=0.9664 
+05/05 11:14:15 [INFO] eps=5, lr=8.56e-06, t_loss=0.5215, v_loss=0.4507*, v_f1=0.9683*
+05/05 11:15:44 [INFO] eps=5, lr=7.96e-06, t_loss=0.5200, v_loss=0.4521 , v_f1=0.9711*
+05/05 11:17:13 [INFO] eps=5, lr=7.41e-06, t_loss=0.5151, v_loss=0.4453*, v_f1=0.9712*
+05/05 11:18:42 [INFO] eps=6, lr=6.89e-06, t_loss=0.4929, v_loss=0.4465 , v_f1=0.9696 
+05/05 11:20:12 [INFO] eps=6, lr=6.41e-06, t_loss=0.5000, v_loss=0.4438*, v_f1=0.9725*
+05/05 11:21:41 [INFO] eps=6, lr=5.96e-06, t_loss=0.4992, v_loss=0.4414*, v_f1=0.9716 
+05/05 11:23:11 [INFO] eps=6, lr=5.54e-06, t_loss=0.5014, v_loss=0.4415 , v_f1=0.9722 
+05/05 11:24:40 [INFO] eps=7, lr=5.15e-06, t_loss=0.4852, v_loss=0.4424 , v_f1=0.9715 
+05/05 11:26:10 [INFO] eps=7, lr=4.79e-06, t_loss=0.4958, v_loss=0.4399*, v_f1=0.9746*
+05/05 11:27:40 [INFO] eps=7, lr=4.46e-06, t_loss=0.4914, v_loss=0.4425 , v_f1=0.9736 
+05/05 11:29:09 [INFO] eps=7, lr=4.14e-06, t_loss=0.4953, v_loss=0.4411 , v_f1=0.9732 
+05/05 11:30:38 [INFO] eps=8, lr=3.85e-06, t_loss=0.4846, v_loss=0.4419 , v_f1=0.9702 
+05/05 11:32:08 [INFO] eps=8, lr=3.58e-06, t_loss=0.4817, v_loss=0.4411 , v_f1=0.9705 
+05/05 11:33:37 [INFO] eps=8, lr=3.33e-06, t_loss=0.4836, v_loss=0.4386*, v_f1=0.9714 
+05/05 11:35:07 [INFO] eps=8, lr=3.1e-06, t_loss=0.4833, v_loss=0.4386*, v_f1=0.9725 
+05/05 11:36:36 [INFO] eps=9, lr=2.88e-06, t_loss=0.4683, v_loss=0.4398 , v_f1=0.9732 
+05/05 11:38:06 [INFO] eps=9, lr=2.68e-06, t_loss=0.4753, v_loss=0.4390 , v_f1=0.9728 
+05/05 11:39:35 [INFO] eps=9, lr=2.49e-06, t_loss=0.4757, v_loss=0.4372*, v_f1=0.9730 
+05/05 11:41:04 [INFO] eps=9, lr=2.32e-06, t_loss=0.4739, v_loss=0.4359*, v_f1=0.9739 
+05/05 11:42:34 [INFO] eps=10, lr=2.16e-06, t_loss=0.4752, v_loss=0.4361 , v_f1=0.9737 
+05/05 11:44:03 [INFO] eps=10, lr=2.01e-06, t_loss=0.4700, v_loss=0.4355*, v_f1=0.9721 
+05/05 11:45:32 [INFO] eps=10, lr=1.87e-06, t_loss=0.4776, v_loss=0.4337*, v_f1=0.9732 
+05/05 11:47:02 [INFO] eps=10, lr=1.74e-06, t_loss=0.4763, v_loss=0.4342 , v_f1=0.9739 
+05/05 11:48:31 [INFO] eps=11, lr=1.61e-06, t_loss=0.4756, v_loss=0.4345 , v_f1=0.9738 
+05/05 11:50:01 [INFO] eps=11, lr=1.5e-06, t_loss=0.4684, v_loss=0.4342 , v_f1=0.9747*
+05/05 11:51:30 [INFO] eps=11, lr=1.4e-06, t_loss=0.4662, v_loss=0.4349 , v_f1=0.9753*
+05/05 11:51:31 [INFO] ./ckpt/swinv2-fold_idx=1-epoch=11-val_loss=0.4349-val_score=0.9753.ckpt : saved.
+05/05 11:53:00 [INFO] eps=11, lr=1.3e-06, t_loss=0.4685, v_loss=0.4357 , v_f1=0.9748 
+05/05 11:54:29 [INFO] eps=12, lr=1.21e-06, t_loss=0.4795, v_loss=0.4348 , v_f1=0.9747 
+05/05 11:55:59 [INFO] eps=12, lr=1.12e-06, t_loss=0.4853, v_loss=0.4357 , v_f1=0.9744 
+05/05 11:57:28 [INFO] eps=12, lr=1.04e-06, t_loss=0.4797, v_loss=0.4357 , v_f1=0.9741 
+05/05 11:58:57 [INFO] eps=12, lr=9.71e-07, t_loss=0.4749, v_loss=0.4349 , v_f1=0.9743 
+05/05 12:00:27 [INFO] eps=13, lr=9.03e-07, t_loss=0.4753, v_loss=0.4338 , v_f1=0.9751 
+05/05 12:00:27 [INFO] NO_MORE_TRAINING, best_score=0.9753
+05/05 12:00:47 [INFO] EMA ::: ema_v_loss=0.4348, ema_v_f1=0.9750
+05/05 12:00:48 [INFO] ./ckpt/swinv2-fold_idx=1-epoch=13-val_loss=0.4348-val_score=0.9750-ema.ckpt : (ema) saved.
+05/05 12:00:49 [INFO] fold_idx=1 finished
+05/05 12:00:58 [INFO] fold_idx=2 started
+05/05 12:01:05 [INFO] load_img_size=192
+05/05 12:01:05 [INFO] load_img_size=192
+05/05 12:01:05 [INFO] create_model: microsoft/swinv2-large-patch4-window12-192-22k
+05/05 12:01:07 [INFO] use_amp=True
+05/05 12:02:36 [INFO] eps=1, lr=2.94e-05, t_loss=1.8064, v_loss=0.6768*, v_f1=0.9213*
+05/05 12:04:06 [INFO] eps=1, lr=2.74e-05, t_loss=1.3280, v_loss=0.5709*, v_f1=0.9466*
+05/05 12:05:35 [INFO] eps=1, lr=2.54e-05, t_loss=1.1401, v_loss=0.5373*, v_f1=0.9550*
+05/05 12:07:04 [INFO] eps=1, lr=2.37e-05, t_loss=1.0410, v_loss=0.5163*, v_f1=0.9611*
+05/05 12:08:34 [INFO] eps=2, lr=2.2e-05, t_loss=0.6588, v_loss=0.5084*, v_f1=0.9603 
+05/05 12:10:04 [INFO] eps=2, lr=2.05e-05, t_loss=0.6581, v_loss=0.4977*, v_f1=0.9636*
+05/05 12:11:33 [INFO] eps=2, lr=1.9e-05, t_loss=0.6554, v_loss=0.5005 , v_f1=0.9623 
+05/05 12:13:02 [INFO] eps=2, lr=1.77e-05, t_loss=0.6452, v_loss=0.4852*, v_f1=0.9670*
+05/05 12:14:32 [INFO] eps=3, lr=1.65e-05, t_loss=0.5813, v_loss=0.4833*, v_f1=0.9657 
+05/05 12:16:02 [INFO] eps=3, lr=1.53e-05, t_loss=0.5661, v_loss=0.4806*, v_f1=0.9654 
+05/05 12:17:31 [INFO] eps=3, lr=1.42e-05, t_loss=0.5778, v_loss=0.4729*, v_f1=0.9666 
+05/05 12:19:00 [INFO] eps=3, lr=1.32e-05, t_loss=0.5747, v_loss=0.4699*, v_f1=0.9680*
+05/05 12:20:29 [INFO] eps=4, lr=1.23e-05, t_loss=0.5481, v_loss=0.4621*, v_f1=0.9681*
+05/05 12:21:59 [INFO] eps=4, lr=1.14e-05, t_loss=0.5436, v_loss=0.4599*, v_f1=0.9700*
+05/05 12:23:29 [INFO] eps=4, lr=1.06e-05, t_loss=0.5476, v_loss=0.4637 , v_f1=0.9698 
+05/05 12:24:58 [INFO] eps=4, lr=9.9e-06, t_loss=0.5478, v_loss=0.4557*, v_f1=0.9717*
+05/05 12:26:27 [INFO] eps=5, lr=9.21e-06, t_loss=0.5326, v_loss=0.4561 , v_f1=0.9675 
+05/05 12:27:57 [INFO] eps=5, lr=8.56e-06, t_loss=0.5237, v_loss=0.4558 , v_f1=0.9692 
+05/05 12:29:26 [INFO] eps=5, lr=7.96e-06, t_loss=0.5230, v_loss=0.4519*, v_f1=0.9715 
+05/05 12:30:56 [INFO] eps=5, lr=7.41e-06, t_loss=0.5262, v_loss=0.4495*, v_f1=0.9718*
+05/05 12:32:25 [INFO] eps=6, lr=6.89e-06, t_loss=0.5223, v_loss=0.4499 , v_f1=0.9708 
+05/05 12:33:55 [INFO] eps=6, lr=6.41e-06, t_loss=0.5186, v_loss=0.4484*, v_f1=0.9726*
+05/05 12:35:24 [INFO] eps=6, lr=5.96e-06, t_loss=0.5171, v_loss=0.4440*, v_f1=0.9762*
+05/05 12:35:25 [INFO] ./ckpt/swinv2-fold_idx=2-epoch=06-val_loss=0.4440-val_score=0.9762.ckpt : saved.
+05/05 12:36:55 [INFO] eps=6, lr=5.54e-06, t_loss=0.5144, v_loss=0.4456 , v_f1=0.9730 
+05/05 12:38:24 [INFO] eps=7, lr=5.15e-06, t_loss=0.4862, v_loss=0.4432*, v_f1=0.9746 
+05/05 12:39:54 [INFO] eps=7, lr=4.79e-06, t_loss=0.4835, v_loss=0.4440 , v_f1=0.9737 
+05/05 12:41:23 [INFO] eps=7, lr=4.46e-06, t_loss=0.4884, v_loss=0.4441 , v_f1=0.9741 
+05/05 12:42:53 [INFO] eps=7, lr=4.14e-06, t_loss=0.4887, v_loss=0.4430*, v_f1=0.9725 
+05/05 12:44:23 [INFO] eps=8, lr=3.85e-06, t_loss=0.4848, v_loss=0.4440 , v_f1=0.9734 
+05/05 12:45:52 [INFO] eps=8, lr=3.58e-06, t_loss=0.4811, v_loss=0.4430*, v_f1=0.9756 
+05/05 12:47:22 [INFO] eps=8, lr=3.33e-06, t_loss=0.4930, v_loss=0.4426*, v_f1=0.9747 
+05/05 12:48:51 [INFO] eps=8, lr=3.1e-06, t_loss=0.4897, v_loss=0.4432 , v_f1=0.9740 
+05/05 12:50:21 [INFO] eps=9, lr=2.88e-06, t_loss=0.4843, v_loss=0.4408*, v_f1=0.9730 
+05/05 12:51:51 [INFO] eps=9, lr=2.68e-06, t_loss=0.4821, v_loss=0.4423 , v_f1=0.9745 
+05/05 12:53:21 [INFO] eps=9, lr=2.49e-06, t_loss=0.4857, v_loss=0.4410 , v_f1=0.9740 
+05/05 12:54:50 [INFO] eps=9, lr=2.32e-06, t_loss=0.4853, v_loss=0.4407*, v_f1=0.9752 
+05/05 12:56:20 [INFO] eps=10, lr=2.16e-06, t_loss=0.4859, v_loss=0.4400*, v_f1=0.9743 
+05/05 12:57:50 [INFO] eps=10, lr=2.01e-06, t_loss=0.4818, v_loss=0.4410 , v_f1=0.9743 
+05/05 12:59:20 [INFO] eps=10, lr=1.87e-06, t_loss=0.4802, v_loss=0.4409 , v_f1=0.9743 
+05/05 13:00:50 [INFO] eps=10, lr=1.74e-06, t_loss=0.4782, v_loss=0.4401 , v_f1=0.9736 
+05/05 13:02:20 [INFO] eps=11, lr=1.61e-06, t_loss=0.4740, v_loss=0.4391*, v_f1=0.9732 
+05/05 13:03:49 [INFO] eps=11, lr=1.5e-06, t_loss=0.4755, v_loss=0.4392 , v_f1=0.9736 
+05/05 13:05:19 [INFO] eps=11, lr=1.4e-06, t_loss=0.4764, v_loss=0.4386*, v_f1=0.9754 
+05/05 13:06:49 [INFO] eps=11, lr=1.3e-06, t_loss=0.4769, v_loss=0.4386*, v_f1=0.9743 
+05/05 13:08:18 [INFO] eps=12, lr=1.21e-06, t_loss=0.4784, v_loss=0.4384*, v_f1=0.9739 
+05/05 13:09:48 [INFO] eps=12, lr=1.12e-06, t_loss=0.4824, v_loss=0.4383*, v_f1=0.9742 
+05/05 13:11:17 [INFO] eps=12, lr=1.04e-06, t_loss=0.4789, v_loss=0.4388 , v_f1=0.9743 
+05/05 13:12:47 [INFO] eps=12, lr=9.71e-07, t_loss=0.4789, v_loss=0.4384 , v_f1=0.9745 
+05/05 13:14:17 [INFO] eps=13, lr=9.03e-07, t_loss=0.4779, v_loss=0.4380*, v_f1=0.9742 
+05/05 13:15:46 [INFO] eps=13, lr=8.4e-07, t_loss=0.4799, v_loss=0.4381 , v_f1=0.9754 
+05/05 13:17:16 [INFO] eps=13, lr=7.81e-07, t_loss=0.4738, v_loss=0.4383 , v_f1=0.9745 
+05/05 13:18:45 [INFO] eps=13, lr=7.26e-07, t_loss=0.4693, v_loss=0.4385 , v_f1=0.9748 
+05/05 13:20:15 [INFO] eps=14, lr=6.75e-07, t_loss=0.4886, v_loss=0.4384 , v_f1=0.9739 
+05/05 13:21:44 [INFO] eps=14, lr=6.28e-07, t_loss=0.4794, v_loss=0.4380*, v_f1=0.9746 
+05/05 13:23:14 [INFO] eps=14, lr=5.84e-07, t_loss=0.4749, v_loss=0.4380 , v_f1=0.9749 
+05/05 13:24:44 [INFO] eps=14, lr=5.43e-07, t_loss=0.4744, v_loss=0.4376*, v_f1=0.9743 
+05/05 13:26:14 [INFO] eps=15, lr=5.05e-07, t_loss=0.4708, v_loss=0.4374*, v_f1=0.9740 
+05/05 13:27:43 [INFO] eps=15, lr=4.7e-07, t_loss=0.4732, v_loss=0.4375 , v_f1=0.9752 
+05/05 13:29:13 [INFO] eps=15, lr=4.37e-07, t_loss=0.4702, v_loss=0.4372*, v_f1=0.9740 
+05/05 13:30:42 [INFO] eps=15, lr=4.06e-07, t_loss=0.4690, v_loss=0.4374 , v_f1=0.9743 
+05/05 13:32:12 [INFO] eps=16, lr=3.78e-07, t_loss=0.4806, v_loss=0.4375 , v_f1=0.9740 
+05/05 13:33:42 [INFO] eps=16, lr=3.52e-07, t_loss=0.4736, v_loss=0.4375 , v_f1=0.9736 
+05/05 13:35:11 [INFO] eps=16, lr=3.27e-07, t_loss=0.4735, v_loss=0.4375 , v_f1=0.9736 
+05/05 13:36:40 [INFO] eps=16, lr=3.04e-07, t_loss=0.4709, v_loss=0.4374 , v_f1=0.9736 
+05/05 13:38:10 [INFO] eps=17, lr=2.83e-07, t_loss=0.4743, v_loss=0.4375 , v_f1=0.9737 
+05/05 13:38:10 [INFO] NO_MORE_TRAINING, best_score=0.9762
+05/05 13:38:30 [INFO] EMA ::: ema_v_loss=0.4376, ema_v_f1=0.9736
+05/05 13:38:31 [INFO] ./ckpt/swinv2-fold_idx=2-epoch=17-val_loss=0.4376-val_score=0.9736-ema.ckpt : (ema) saved.
+05/05 13:38:32 [INFO] fold_idx=2 finished
+05/05 13:38:39 [INFO] fold_idx=3 started
+05/05 13:38:47 [INFO] load_img_size=192
+05/05 13:38:47 [INFO] load_img_size=192
+05/05 13:38:47 [INFO] create_model: microsoft/swinv2-large-patch4-window12-192-22k
+05/05 13:38:48 [INFO] use_amp=True
+05/05 13:40:18 [INFO] eps=1, lr=2.94e-05, t_loss=1.6131, v_loss=0.6171*, v_f1=0.9357*
+05/05 13:41:47 [INFO] eps=1, lr=2.74e-05, t_loss=1.2104, v_loss=0.5418*, v_f1=0.9553*
+05/05 13:43:17 [INFO] eps=1, lr=2.54e-05, t_loss=1.0602, v_loss=0.5184*, v_f1=0.9629*
+05/05 13:44:47 [INFO] eps=1, lr=2.37e-05, t_loss=0.9734, v_loss=0.4948*, v_f1=0.9628 
+05/05 13:46:17 [INFO] eps=2, lr=2.2e-05, t_loss=0.6476, v_loss=0.4853*, v_f1=0.9670*
+05/05 13:47:47 [INFO] eps=2, lr=2.05e-05, t_loss=0.6441, v_loss=0.4817*, v_f1=0.9648 
+05/05 13:49:16 [INFO] eps=2, lr=1.9e-05, t_loss=0.6372, v_loss=0.4766*, v_f1=0.9691*
+05/05 13:50:46 [INFO] eps=2, lr=1.77e-05, t_loss=0.6339, v_loss=0.4712*, v_f1=0.9670 
+05/05 13:52:16 [INFO] eps=3, lr=1.65e-05, t_loss=0.5683, v_loss=0.4638*, v_f1=0.9704*
+05/05 13:53:45 [INFO] eps=3, lr=1.53e-05, t_loss=0.5647, v_loss=0.4580*, v_f1=0.9692 
+05/05 13:55:15 [INFO] eps=3, lr=1.42e-05, t_loss=0.5723, v_loss=0.4533*, v_f1=0.9710*
+05/05 13:56:45 [INFO] eps=3, lr=1.32e-05, t_loss=0.5750, v_loss=0.4507*, v_f1=0.9705 
+05/05 13:58:15 [INFO] eps=4, lr=1.23e-05, t_loss=0.5538, v_loss=0.4504*, v_f1=0.9711*
+05/05 13:59:44 [INFO] eps=4, lr=1.14e-05, t_loss=0.5403, v_loss=0.4449*, v_f1=0.9748*
+05/05 14:01:13 [INFO] eps=4, lr=1.06e-05, t_loss=0.5399, v_loss=0.4414*, v_f1=0.9755*
+05/05 14:01:14 [INFO] ./ckpt/swinv2-fold_idx=3-epoch=04-val_loss=0.4414-val_score=0.9755.ckpt : saved.
+05/05 14:02:44 [INFO] eps=4, lr=9.9e-06, t_loss=0.5396, v_loss=0.4413*, v_f1=0.9740 
+05/05 14:04:13 [INFO] eps=5, lr=9.21e-06, t_loss=0.5078, v_loss=0.4404*, v_f1=0.9765*
+05/05 14:04:14 [INFO] ./ckpt/swinv2-fold_idx=3-epoch=05-val_loss=0.4404-val_score=0.9765.ckpt : saved.
+05/05 14:05:44 [INFO] eps=5, lr=8.56e-06, t_loss=0.5207, v_loss=0.4393*, v_f1=0.9745 
+05/05 14:07:13 [INFO] eps=5, lr=7.96e-06, t_loss=0.5268, v_loss=0.4428 , v_f1=0.9737 
+05/05 14:08:43 [INFO] eps=5, lr=7.41e-06, t_loss=0.5262, v_loss=0.4416 , v_f1=0.9727 
+05/05 14:10:13 [INFO] eps=6, lr=6.89e-06, t_loss=0.5216, v_loss=0.4420 , v_f1=0.9707 
+05/05 14:11:42 [INFO] eps=6, lr=6.41e-06, t_loss=0.5086, v_loss=0.4377*, v_f1=0.9736 
+05/05 14:13:12 [INFO] eps=6, lr=5.96e-06, t_loss=0.5082, v_loss=0.4364*, v_f1=0.9735 
+05/05 14:14:41 [INFO] eps=6, lr=5.54e-06, t_loss=0.5075, v_loss=0.4369 , v_f1=0.9735 
+05/05 14:16:11 [INFO] eps=7, lr=5.15e-06, t_loss=0.5135, v_loss=0.4339*, v_f1=0.9761 
+05/05 14:17:41 [INFO] eps=7, lr=4.79e-06, t_loss=0.5033, v_loss=0.4354 , v_f1=0.9739 
+05/05 14:19:11 [INFO] eps=7, lr=4.46e-06, t_loss=0.5040, v_loss=0.4320*, v_f1=0.9761 
+05/05 14:20:40 [INFO] eps=7, lr=4.14e-06, t_loss=0.5013, v_loss=0.4330 , v_f1=0.9755 
+05/05 14:22:10 [INFO] eps=8, lr=3.85e-06, t_loss=0.4935, v_loss=0.4334 , v_f1=0.9761 
+05/05 14:23:39 [INFO] eps=8, lr=3.58e-06, t_loss=0.4855, v_loss=0.4309*, v_f1=0.9762 
+05/05 14:25:09 [INFO] eps=8, lr=3.33e-06, t_loss=0.4846, v_loss=0.4320 , v_f1=0.9778*
+05/05 14:25:09 [INFO] ./ckpt/swinv2-fold_idx=3-epoch=08-val_loss=0.4320-val_score=0.9778.ckpt : saved.
+05/05 14:26:39 [INFO] eps=8, lr=3.1e-06, t_loss=0.4848, v_loss=0.4296*, v_f1=0.9785*
+05/05 14:26:40 [INFO] ./ckpt/swinv2-fold_idx=3-epoch=08-val_loss=0.4296-val_score=0.9785.ckpt : saved.
+05/05 14:28:10 [INFO] eps=9, lr=2.88e-06, t_loss=0.4976, v_loss=0.4313 , v_f1=0.9778 
+05/05 14:29:39 [INFO] eps=9, lr=2.68e-06, t_loss=0.4943, v_loss=0.4316 , v_f1=0.9762 
+05/05 14:31:08 [INFO] eps=9, lr=2.49e-06, t_loss=0.4960, v_loss=0.4284*, v_f1=0.9768 
+05/05 14:32:37 [INFO] eps=9, lr=2.32e-06, t_loss=0.4906, v_loss=0.4291 , v_f1=0.9772 
+05/05 14:34:07 [INFO] eps=10, lr=2.16e-06, t_loss=0.4830, v_loss=0.4295 , v_f1=0.9787*
+05/05 14:34:08 [INFO] ./ckpt/swinv2-fold_idx=3-epoch=10-val_loss=0.4295-val_score=0.9787.ckpt : saved.
+05/05 14:35:37 [INFO] eps=10, lr=2.01e-06, t_loss=0.4813, v_loss=0.4299 , v_f1=0.9766 
+05/05 14:37:07 [INFO] eps=10, lr=1.87e-06, t_loss=0.4836, v_loss=0.4296 , v_f1=0.9759 
+05/05 14:38:37 [INFO] eps=10, lr=1.74e-06, t_loss=0.4849, v_loss=0.4288 , v_f1=0.9768 
+05/05 14:40:06 [INFO] eps=11, lr=1.61e-06, t_loss=0.4568, v_loss=0.4299 , v_f1=0.9765 
+05/05 14:41:36 [INFO] eps=11, lr=1.5e-06, t_loss=0.4641, v_loss=0.4286 , v_f1=0.9781 
+05/05 14:43:05 [INFO] eps=11, lr=1.4e-06, t_loss=0.4719, v_loss=0.4281*, v_f1=0.9772 
+05/05 14:44:35 [INFO] eps=11, lr=1.3e-06, t_loss=0.4722, v_loss=0.4286 , v_f1=0.9784 
+05/05 14:46:04 [INFO] eps=12, lr=1.21e-06, t_loss=0.4692, v_loss=0.4287 , v_f1=0.9778 
+05/05 14:47:33 [INFO] eps=12, lr=1.12e-06, t_loss=0.4728, v_loss=0.4276*, v_f1=0.9768 
+05/05 14:49:03 [INFO] eps=12, lr=1.04e-06, t_loss=0.4713, v_loss=0.4277 , v_f1=0.9765 
+05/05 14:50:32 [INFO] eps=12, lr=9.71e-07, t_loss=0.4740, v_loss=0.4281 , v_f1=0.9778 
+05/05 14:52:02 [INFO] eps=13, lr=9.03e-07, t_loss=0.4774, v_loss=0.4274*, v_f1=0.9774 
+05/05 14:53:31 [INFO] eps=13, lr=8.4e-07, t_loss=0.4704, v_loss=0.4276 , v_f1=0.9778 
+05/05 14:55:01 [INFO] eps=13, lr=7.81e-07, t_loss=0.4670, v_loss=0.4276 , v_f1=0.9778 
+05/05 14:56:30 [INFO] eps=13, lr=7.26e-07, t_loss=0.4721, v_loss=0.4274 , v_f1=0.9778 
+05/05 14:58:00 [INFO] eps=14, lr=6.75e-07, t_loss=0.4601, v_loss=0.4275 , v_f1=0.9778 
+05/05 14:59:29 [INFO] eps=14, lr=6.28e-07, t_loss=0.4722, v_loss=0.4281 , v_f1=0.9775 
+05/05 15:00:59 [INFO] eps=14, lr=5.84e-07, t_loss=0.4706, v_loss=0.4286 , v_f1=0.9770 
+05/05 15:00:59 [INFO] NO_MORE_TRAINING, best_score=0.9787
+05/05 15:01:20 [INFO] EMA ::: ema_v_loss=0.4278, ema_v_f1=0.9771
+05/05 15:01:21 [INFO] ./ckpt/swinv2-fold_idx=3-epoch=14-val_loss=0.4278-val_score=0.9771-ema.ckpt : (ema) saved.
+05/05 15:01:21 [INFO] fold_idx=3 finished
+05/05 15:01:30 [INFO] fold_idx=4 started
+05/05 15:01:37 [INFO] load_img_size=192
+05/05 15:01:37 [INFO] load_img_size=192
+05/05 15:01:37 [INFO] create_model: microsoft/swinv2-large-patch4-window12-192-22k
+05/05 15:01:39 [INFO] use_amp=True
+05/05 15:03:08 [INFO] eps=1, lr=2.94e-05, t_loss=1.6339, v_loss=0.6256*, v_f1=0.9310*
+05/05 15:04:38 [INFO] eps=1, lr=2.74e-05, t_loss=1.2347, v_loss=0.5585*, v_f1=0.9480*
+05/05 15:06:08 [INFO] eps=1, lr=2.54e-05, t_loss=1.0781, v_loss=0.5235*, v_f1=0.9553*
+05/05 15:07:37 [INFO] eps=1, lr=2.37e-05, t_loss=0.9831, v_loss=0.5062*, v_f1=0.9584*
+05/05 15:09:07 [INFO] eps=2, lr=2.2e-05, t_loss=0.6367, v_loss=0.4994*, v_f1=0.9576 
+05/05 15:10:36 [INFO] eps=2, lr=2.05e-05, t_loss=0.6280, v_loss=0.4883*, v_f1=0.9595*
+05/05 15:12:06 [INFO] eps=2, lr=1.9e-05, t_loss=0.6215, v_loss=0.4797*, v_f1=0.9624*
+05/05 15:13:35 [INFO] eps=2, lr=1.77e-05, t_loss=0.6258, v_loss=0.4789*, v_f1=0.9646*
+05/05 15:15:05 [INFO] eps=3, lr=1.65e-05, t_loss=0.5794, v_loss=0.4717*, v_f1=0.9655*
+05/05 15:16:34 [INFO] eps=3, lr=1.53e-05, t_loss=0.5883, v_loss=0.4715*, v_f1=0.9666*
+05/05 15:18:03 [INFO] eps=3, lr=1.42e-05, t_loss=0.5807, v_loss=0.4637*, v_f1=0.9684*
+05/05 15:19:33 [INFO] eps=3, lr=1.32e-05, t_loss=0.5776, v_loss=0.4614*, v_f1=0.9693*
+05/05 15:21:03 [INFO] eps=4, lr=1.23e-05, t_loss=0.5277, v_loss=0.4571*, v_f1=0.9702*
+05/05 15:22:32 [INFO] eps=4, lr=1.14e-05, t_loss=0.5291, v_loss=0.4568*, v_f1=0.9679 
+05/05 15:24:01 [INFO] eps=4, lr=1.06e-05, t_loss=0.5347, v_loss=0.4556*, v_f1=0.9691 
+05/05 15:25:31 [INFO] eps=4, lr=9.9e-06, t_loss=0.5353, v_loss=0.4558 , v_f1=0.9701 
+05/05 15:27:00 [INFO] eps=5, lr=9.21e-06, t_loss=0.5012, v_loss=0.4537*, v_f1=0.9707*
+05/05 15:28:30 [INFO] eps=5, lr=8.56e-06, t_loss=0.5124, v_loss=0.4548 , v_f1=0.9691 
+05/05 15:29:59 [INFO] eps=5, lr=7.96e-06, t_loss=0.5159, v_loss=0.4479*, v_f1=0.9699 
+05/05 15:31:28 [INFO] eps=5, lr=7.41e-06, t_loss=0.5192, v_loss=0.4465*, v_f1=0.9704 
+05/05 15:32:58 [INFO] eps=6, lr=6.89e-06, t_loss=0.5203, v_loss=0.4449*, v_f1=0.9708*
+05/05 15:34:28 [INFO] eps=6, lr=6.41e-06, t_loss=0.5163, v_loss=0.4447*, v_f1=0.9705 
+05/05 15:35:57 [INFO] eps=6, lr=5.96e-06, t_loss=0.5129, v_loss=0.4444*, v_f1=0.9689 
+05/05 15:37:26 [INFO] eps=6, lr=5.54e-06, t_loss=0.5104, v_loss=0.4421*, v_f1=0.9702 
+05/05 15:38:56 [INFO] eps=7, lr=5.15e-06, t_loss=0.5092, v_loss=0.4428 , v_f1=0.9718*
+05/05 15:40:25 [INFO] eps=7, lr=4.79e-06, t_loss=0.5091, v_loss=0.4428 , v_f1=0.9711 
+05/05 15:41:55 [INFO] eps=7, lr=4.46e-06, t_loss=0.5064, v_loss=0.4420*, v_f1=0.9721*
+05/05 15:43:24 [INFO] eps=7, lr=4.14e-06, t_loss=0.5048, v_loss=0.4412*, v_f1=0.9711 
+05/05 15:44:54 [INFO] eps=8, lr=3.85e-06, t_loss=0.4947, v_loss=0.4416 , v_f1=0.9726*
+05/05 15:46:23 [INFO] eps=8, lr=3.58e-06, t_loss=0.4929, v_loss=0.4420 , v_f1=0.9708 
+05/05 15:47:53 [INFO] eps=8, lr=3.33e-06, t_loss=0.4918, v_loss=0.4390*, v_f1=0.9704 
+05/05 15:49:22 [INFO] eps=8, lr=3.1e-06, t_loss=0.4896, v_loss=0.4413 , v_f1=0.9719 
+05/05 15:50:52 [INFO] eps=9, lr=2.88e-06, t_loss=0.4861, v_loss=0.4402 , v_f1=0.9724 
+05/05 15:52:22 [INFO] eps=9, lr=2.68e-06, t_loss=0.4843, v_loss=0.4382*, v_f1=0.9711 
+05/05 15:53:51 [INFO] eps=9, lr=2.49e-06, t_loss=0.4802, v_loss=0.4383 , v_f1=0.9719 
+05/05 15:55:21 [INFO] eps=9, lr=2.32e-06, t_loss=0.4807, v_loss=0.4375*, v_f1=0.9723 
+05/05 15:56:50 [INFO] eps=10, lr=2.16e-06, t_loss=0.4693, v_loss=0.4387 , v_f1=0.9714 
+05/05 15:58:20 [INFO] eps=10, lr=2.01e-06, t_loss=0.4729, v_loss=0.4393 , v_f1=0.9717 
+05/05 15:59:49 [INFO] eps=10, lr=1.87e-06, t_loss=0.4729, v_loss=0.4392 , v_f1=0.9725 
+05/05 16:01:19 [INFO] eps=10, lr=1.74e-06, t_loss=0.4756, v_loss=0.4357*, v_f1=0.9727*
+05/05 16:02:49 [INFO] eps=11, lr=1.61e-06, t_loss=0.4750, v_loss=0.4355*, v_f1=0.9720 
+05/05 16:04:18 [INFO] eps=11, lr=1.5e-06, t_loss=0.4757, v_loss=0.4359 , v_f1=0.9734*
+05/05 16:05:47 [INFO] eps=11, lr=1.4e-06, t_loss=0.4747, v_loss=0.4365 , v_f1=0.9734 
+05/05 16:07:17 [INFO] eps=11, lr=1.3e-06, t_loss=0.4737, v_loss=0.4364 , v_f1=0.9733 
+05/05 16:08:47 [INFO] eps=12, lr=1.21e-06, t_loss=0.4643, v_loss=0.4354*, v_f1=0.9735*
+05/05 16:10:16 [INFO] eps=12, lr=1.12e-06, t_loss=0.4721, v_loss=0.4357 , v_f1=0.9724 
+05/05 16:11:45 [INFO] eps=12, lr=1.04e-06, t_loss=0.4733, v_loss=0.4361 , v_f1=0.9726 
+05/05 16:13:15 [INFO] eps=12, lr=9.71e-07, t_loss=0.4749, v_loss=0.4358 , v_f1=0.9743*
+05/05 16:14:44 [INFO] eps=13, lr=9.03e-07, t_loss=0.4670, v_loss=0.4359 , v_f1=0.9739 
+05/05 16:16:14 [INFO] eps=13, lr=8.4e-07, t_loss=0.4662, v_loss=0.4360 , v_f1=0.9740 
+05/05 16:17:43 [INFO] eps=13, lr=7.81e-07, t_loss=0.4679, v_loss=0.4360 , v_f1=0.9737 
+05/05 16:19:12 [INFO] eps=13, lr=7.26e-07, t_loss=0.4693, v_loss=0.4359 , v_f1=0.9733 
+05/05 16:20:41 [INFO] eps=14, lr=6.75e-07, t_loss=0.4538, v_loss=0.4350*, v_f1=0.9725 
+05/05 16:22:11 [INFO] eps=14, lr=6.28e-07, t_loss=0.4567, v_loss=0.4351 , v_f1=0.9735 
+05/05 16:23:40 [INFO] eps=14, lr=5.84e-07, t_loss=0.4660, v_loss=0.4350 , v_f1=0.9735 
+05/05 16:25:10 [INFO] eps=14, lr=5.43e-07, t_loss=0.4682, v_loss=0.4351 , v_f1=0.9739 
+05/05 16:26:39 [INFO] eps=15, lr=5.05e-07, t_loss=0.4668, v_loss=0.4348*, v_f1=0.9732 
+05/05 16:28:08 [INFO] eps=15, lr=4.7e-07, t_loss=0.4639, v_loss=0.4343*, v_f1=0.9732 
+05/05 16:29:38 [INFO] eps=15, lr=4.37e-07, t_loss=0.4650, v_loss=0.4345 , v_f1=0.9729 
+05/05 16:31:07 [INFO] eps=15, lr=4.06e-07, t_loss=0.4699, v_loss=0.4344 , v_f1=0.9733 
+05/05 16:32:37 [INFO] eps=16, lr=3.78e-07, t_loss=0.4742, v_loss=0.4338*, v_f1=0.9744*
+05/05 16:34:06 [INFO] eps=16, lr=3.52e-07, t_loss=0.4665, v_loss=0.4339 , v_f1=0.9723 
+05/05 16:35:36 [INFO] eps=16, lr=3.27e-07, t_loss=0.4668, v_loss=0.4336*, v_f1=0.9730 
+05/05 16:37:05 [INFO] eps=16, lr=3.04e-07, t_loss=0.4657, v_loss=0.4339 , v_f1=0.9727 
+05/05 16:38:35 [INFO] eps=17, lr=2.83e-07, t_loss=0.4643, v_loss=0.4337 , v_f1=0.9730 
+05/05 16:40:04 [INFO] eps=17, lr=2.63e-07, t_loss=0.4758, v_loss=0.4339 , v_f1=0.9730 
+05/05 16:41:33 [INFO] eps=17, lr=2.45e-07, t_loss=0.4738, v_loss=0.4335*, v_f1=0.9726 
+05/05 16:43:03 [INFO] eps=17, lr=2.27e-07, t_loss=0.4685, v_loss=0.4332*, v_f1=0.9729 
+05/05 16:44:32 [INFO] eps=18, lr=2.12e-07, t_loss=0.4714, v_loss=0.4329*, v_f1=0.9726 
+05/05 16:46:02 [INFO] eps=18, lr=1.97e-07, t_loss=0.4702, v_loss=0.4327*, v_f1=0.9739 
+05/05 16:47:31 [INFO] eps=18, lr=1.83e-07, t_loss=0.4705, v_loss=0.4330 , v_f1=0.9735 
+05/05 16:49:00 [INFO] eps=18, lr=1.7e-07, t_loss=0.4675, v_loss=0.4330 , v_f1=0.9739 
+05/05 16:50:30 [INFO] eps=19, lr=1.58e-07, t_loss=0.4595, v_loss=0.4329 , v_f1=0.9739 
+05/05 16:51:59 [INFO] eps=19, lr=1.47e-07, t_loss=0.4601, v_loss=0.4329 , v_f1=0.9736 
+05/05 16:53:29 [INFO] eps=19, lr=1.37e-07, t_loss=0.4604, v_loss=0.4329 , v_f1=0.9738 
+05/05 16:54:58 [INFO] eps=19, lr=1.27e-07, t_loss=0.4609, v_loss=0.4330 , v_f1=0.9745*
+05/05 16:56:28 [INFO] eps=20, lr=1.18e-07, t_loss=0.4622, v_loss=0.4328 , v_f1=0.9742 
+05/05 16:57:58 [INFO] eps=20, lr=1.1e-07, t_loss=0.4675, v_loss=0.4330 , v_f1=0.9739 
+05/05 16:59:27 [INFO] eps=20, lr=1.02e-07, t_loss=0.4667, v_loss=0.4327 , v_f1=0.9739 
+05/05 17:00:57 [INFO] eps=20, lr=9.52e-08, t_loss=0.4661, v_loss=0.4326*, v_f1=0.9743 
+05/05 17:02:26 [INFO] eps=21, lr=8.85e-08, t_loss=0.4731, v_loss=0.4326 , v_f1=0.9743 
+05/05 17:03:56 [INFO] eps=21, lr=8.23e-08, t_loss=0.4701, v_loss=0.4326*, v_f1=0.9746*
+05/05 17:05:25 [INFO] eps=21, lr=7.66e-08, t_loss=0.4777, v_loss=0.4324*, v_f1=0.9753*
+05/05 17:05:26 [INFO] ./ckpt/swinv2-fold_idx=4-epoch=21-val_loss=0.4324-val_score=0.9753.ckpt : saved.
+05/05 17:06:56 [INFO] eps=21, lr=7.12e-08, t_loss=0.4712, v_loss=0.4324*, v_f1=0.9746 
+05/05 17:08:25 [INFO] eps=22, lr=6.62e-08, t_loss=0.4662, v_loss=0.4324 , v_f1=0.9750 
+05/05 17:09:55 [INFO] eps=22, lr=6.16e-08, t_loss=0.4658, v_loss=0.4325 , v_f1=0.9750 
+05/05 17:11:24 [INFO] eps=22, lr=5.73e-08, t_loss=0.4635, v_loss=0.4325 , v_f1=0.9743 
+05/05 17:12:53 [INFO] eps=22, lr=5.33e-08, t_loss=0.4647, v_loss=0.4326 , v_f1=0.9746 
+05/05 17:14:23 [INFO] eps=23, lr=4.95e-08, t_loss=0.4516, v_loss=0.4326 , v_f1=0.9756*
+05/05 17:14:24 [INFO] ./ckpt/swinv2-fold_idx=4-epoch=23-val_loss=0.4326-val_score=0.9756.ckpt : saved.
+05/05 17:15:53 [INFO] eps=23, lr=4.61e-08, t_loss=0.4655, v_loss=0.4324 , v_f1=0.9749 
+05/05 17:17:23 [INFO] eps=23, lr=4.28e-08, t_loss=0.4667, v_loss=0.4324 , v_f1=0.9749 
+05/05 17:18:53 [INFO] eps=23, lr=3.99e-08, t_loss=0.4669, v_loss=0.4324*, v_f1=0.9749 
+05/05 17:20:22 [INFO] eps=24, lr=3.71e-08, t_loss=0.4696, v_loss=0.4324 , v_f1=0.9749 
+05/05 17:21:52 [INFO] eps=24, lr=3.45e-08, t_loss=0.4733, v_loss=0.4324 , v_f1=0.9749 
+05/05 17:23:21 [INFO] eps=24, lr=3.21e-08, t_loss=0.4759, v_loss=0.4325 , v_f1=0.9752 
+05/05 17:24:50 [INFO] eps=24, lr=2.98e-08, t_loss=0.4733, v_loss=0.4325 , v_f1=0.9752 
+05/05 17:26:20 [INFO] eps=25, lr=2.77e-08, t_loss=0.4700, v_loss=0.4326 , v_f1=0.9752 
+05/05 17:27:50 [INFO] eps=25, lr=2.58e-08, t_loss=0.4681, v_loss=0.4325 , v_f1=0.9752 
+05/05 17:27:50 [INFO] NO_MORE_TRAINING, best_score=0.9756
+05/05 17:28:10 [INFO] EMA ::: ema_v_loss=0.4325, ema_v_f1=0.9749
+05/05 17:28:11 [INFO] ./ckpt/swinv2-fold_idx=4-epoch=25-val_loss=0.4325-val_score=0.9749-ema.ckpt : (ema) saved.
+05/05 17:28:12 [INFO] fold_idx=4 finished

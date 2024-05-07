@@ -1,0 +1,29 @@
+# 앙상블 : eva_large, beitv2
+
+05/05 02:19:44 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=06-val_loss=0.4065-val_score=0.9837.ckpt loading
+05/05 02:19:44 [INFO] 196
+05/05 02:19:44 [INFO] load_img_size=196
+05/05 02:19:44 [INFO] create_model: eva_large_patch14_196.in22k_ft_in22k_in1k
+05/05 02:19:44 [INFO] Loading pretrained weights from Hugging Face hub (timm/eva_large_patch14_196.in22k_ft_in22k_in1k)
+05/05 02:19:44 [INFO] [timm/eva_large_patch14_196.in22k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/05 02:19:45 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=4-epoch=06-val_loss=0.4065-val_score=0.9837.ckpt loading
+05/05 02:20:42 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=3-epoch=05-val_loss=0.4032-val_score=0.9819.ckpt loading
+05/05 02:21:42 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=2-epoch=08-val_loss=0.4083-val_score=0.9811.ckpt loading
+05/05 02:22:43 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=1-epoch=11-val_loss=0.4039-val_score=0.9825.ckpt loading
+05/05 02:23:45 [INFO] ./ckpt/eva_large_patch14_196.in22k_ft_in22k_in1k-fold_idx=0-epoch=05-val_loss=0.4111-val_score=0.9811.ckpt loading
+05/05 02:24:47 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=06-val_loss=0.4086-val_score=0.9813.ckpt loading
+05/05 02:24:47 [INFO] 224
+05/05 02:24:47 [INFO] load_img_size=224
+05/05 02:24:47 [INFO] create_model: beitv2_large_patch16_224.in1k_ft_in22k_in1k
+05/05 02:24:47 [INFO] Loading pretrained weights from Hugging Face hub (timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k)
+05/05 02:24:48 [INFO] [timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+05/05 02:24:48 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=4-epoch=06-val_loss=0.4086-val_score=0.9813.ckpt loading
+05/05 02:25:54 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=3-epoch=10-val_loss=0.4049-val_score=0.9825.ckpt loading
+05/05 02:27:01 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=2-epoch=09-val_loss=0.4129-val_score=0.9803.ckpt loading
+05/05 02:28:07 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=1-epoch=10-val_loss=0.4071-val_score=0.9815.ckpt loading
+05/05 02:29:14 [INFO] ./ckpt/beitv2_large_patch16_224.in1k_ft_in22k_in1k-fold_idx=0-epoch=09-val_loss=0.4112-val_score=0.9818.ckpt loading
+05/05 02:31:04 [INFO] preds_score=array([0.9837, 0.9819, 0.9811, 0.9825, 0.9811, 0.9813, 0.9825, 0.9803,
+       0.9815, 0.9818])
+05/05 02:31:04 [INFO] preds_coef=array([0.10117633, 0.10007923, 0.09959164, 0.10044493, 0.09959164,
+       0.09971354, 0.10044493, 0.09910404, 0.09983544, 0.10001828])
+05/05 02:31:06 [INFO] ./basslibrary_submit_20240505_0231.csv saved
