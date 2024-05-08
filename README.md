@@ -2,8 +2,8 @@
 
 public, private 리더보드에서 높은 점수를 기록하였습니다.
 
-- publice LB score : 0.98335 ( 1위 )
-- private LB score : 0.98498 ( 1위 )
+- publice LB score(#1) : 0.98335
+- private LB score(#1) : 0.98498
 
 ## 1. 환경 설정
 ### 1.1 저장소 코드 복사
@@ -53,13 +53,19 @@ basslibrary_model_train.ipynb 파일에서 CFG 설정을 아래처럼 변경하�
 EMA(Exponential Moving Average) 모델을 포함하여 모두 10개의 체크포인트 파일 생성
 
 ```bash
+CFG['SEED'] = 42
+CFG['N_SPLIT'] = 5
+CFG['LABEL_SMOOTHING'] = 0.05
+CFG['INTERPOLATION'] = 'robidouxsharp'
+CFG['PRECISION'] = '16'
 CFG['MODEL_NAME'] = "timm/eva_large_patch14_196.in22k_ft_in22k_in1k"
 CFG['IMG_SIZE'] = 196
+CFG['IMG_TRAIN_SIZE'] = 196
 CFG['BATCH_SIZE'] = 48
 CFG['LR'] = [ 0.25e-5 * np.sqrt(CFG['BATCH_SIZE']), 1e-6 ]
 ```
 
-[출력로그](https://github.com/ujinyang/model_run(eva_large).log)
+출력로그 : logs/model_run(eva_large).log
 
 ### 3.2 beitv2_large 모델
 
@@ -67,13 +73,19 @@ basslibrary_model_train.ipynb 파일에서 CFG 설정을 아래처럼 변경하�
 EMA(Exponential Moving Average) 모델을 포함하여 모두 10개의 체크포인트 파일 생성
 
 ```bash
+CFG['SEED'] = 42
+CFG['N_SPLIT'] = 5
+CFG['LABEL_SMOOTHING'] = 0.05
+CFG['INTERPOLATION'] = 'robidouxsharp'
+CFG['PRECISION'] = '16'
 CFG['MODEL_NAME'] = "timm/beitv2_large_patch16_224.in1k_ft_in22k_in1k"
 CFG['IMG_SIZE'] = 224
+CFG['IMG_TRAIN_SIZE'] = 224
 CFG['BATCH_SIZE'] = 48
 CFG['LR'] = [ 0.25e-5 * np.sqrt(CFG['BATCH_SIZE']), 1e-6 ]
 ```
 
-[출력로그](https://github.com/ujinyang/model_run(beitv2_large).log)
+출력로그 : logs/model_run(beitv2_large).log
 
 ## 4. 모델 결과 제출
 
@@ -97,4 +109,4 @@ EMA를 제외한 일반 모델 10개를 기준으로 submit 파일을 생성함
 |10 | beitv2_large_patch16_224.in1k_ft_in22k_in1k |  4 |   6 | 0.4086 |  0.9813 |
 
 
-[출력로그](https://github.com/ujinyang/model_result(ensemble).log)
+출력로그 : logs/model_result(ensemble).log
