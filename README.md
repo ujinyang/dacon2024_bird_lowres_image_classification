@@ -114,6 +114,6 @@ EMA를 제외한 일반 모델 10개를 기준으로 submit 파일을 생성함
 
 ### 4.2 모델 체크포인트
 
-점수재현을 위한 체크포인트 파일은 아래 링크에서 받을 수 있습니다. (한시적 제공)
+당분간 체크포인트 파일을 다운로드 하실 수 있도록 구글 드라이브에 올렸습니다.
 
 https://drive.google.com/drive/folders/1IH2zGl7ofsNE9kGQmYO7x0AqSENY3dt3?usp=drive_link
