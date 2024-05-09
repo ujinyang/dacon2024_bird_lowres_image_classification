@@ -92,6 +92,7 @@ CFG['LR'] = [ 0.25e-5 * np.sqrt(CFG['BATCH_SIZE']), 1e-6 ]
 ※ 노트북 파일에 실행결과가 포함되어 있지 않은 대신, 별도의 출력로그를 첨부하였습니다.
 
 ### 4.1 모델 앙상블
+
 basslibrary_model_submit.ipynb 파일을 실행하면, ckpt폴더에 저장된 결과 중
 EMA를 제외한 일반 모델 10개를 기준으로 submit 파일을 생성함
 
@@ -110,3 +111,9 @@ EMA를 제외한 일반 모델 10개를 기준으로 submit 파일을 생성함
 
 
 출력로그 : logs/model_result(ensemble).log
+
+### 4.2 모델 체크포인트
+
+점수재현을 위한 체크포인트 파일은 아래 링크에서 받을 수 있습니다. (한시적 제공)
+
+https://drive.google.com/drive/folders/1IH2zGl7ofsNE9kGQmYO7x0AqSENY3dt3?usp=drive_link
